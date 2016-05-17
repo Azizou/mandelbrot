@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+fractal instance_name (
+    .Clk_100M(Clk_100M), 
+    .reset(reset), 
+    .startX(startX), 
+    .startY(startY), 
+    .stepX(stepX), 
+    .stepY(stepY), 
+    .divOut(divOut), 
+    .q(q), 
+    .HS(HS), 
+    .VS(VS), 
+    .COLOUR_OUT(COLOUR_OUT)
+    );
+
+

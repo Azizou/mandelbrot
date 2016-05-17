@@ -1,0 +1,28 @@
+Command line:
+   pixel_gen_isim_beh.exe
+     -simmode  gui
+     -simrunnum  4
+     -socket  48765
+
+Tue May 17 21:08:20 2016
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 242.164 Meg
+
+ Total Signals          : 172
+ Total Nets             : 613
+ Total Signal Drivers   : 66
+ Total Blocks           : 19
+ Total Primitive Blocks : 15
+ Total Processes        : 79
+ Total Traceable Variables  : 340
+ Total Scalar Nets and Variables : 3396758
+
+ Total Simulation Time: 0.17 sec
+
+ Current Memory Usage: 317.665 Meg
+
+Tue May 17 21:08:52 2016
+

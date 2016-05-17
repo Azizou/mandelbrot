@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/bluelabuser/Desktop/Temp/fractal/impact.xsl
+OUTFILE=/home/bluelabuser/Desktop/Temp/fractal/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/bluelabuser/Desktop/Temp/fractal
+LICENSE=iMPACT
+USER_INFO=iMPACT

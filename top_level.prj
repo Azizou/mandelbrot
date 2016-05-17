@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/bram.v"
+verilog work "vga_sync.v"
+verilog work "pixel_gen.v"
+verilog work "diverge_pipe.v"
+verilog work "fractal.v"
+verilog work "top_level.v"
