@@ -24,7 +24,8 @@ module pixel_gen(
 	input wire [9:0] pixel_x, pixel_y,
 	output reg [11:0] color, 
 	input wire [18:0] addr_w,
-   input wire [6:0] dina
+   input wire [6:0] dina,
+	input wire read_enable
 	);
 
 	parameter width = 7;
@@ -43,7 +44,7 @@ module pixel_gen(
 	reg [18:0]read_addr;
 	
 	wire [11:0] bitmap_color;
-	assign addr_r = {pixel_y[8:0], pixel_x[9:0]};//19 bit address
+	assign addr_r = {10'b0,pixel_y}*640 + {9'b0,pixel_x};//{pixel_y[8:0], pixel_x[9:0]};//19 bit address
 	assign bitmap_color = {{dout[1],3'b110}, {2'b01, dout[1:0]},{dout[1:0],2'b11}};
 
 	
@@ -51,7 +52,7 @@ module pixel_gen(
 	//		RGB MULTIPLEXING CIRCUIT
 	//-------------------------------
 	always @(*)
-		if(~video_on)
+		if(~video_on | ~read_enable)
 			color = 12'h_0_0_0;
 		else
 			color = bitmap_color;

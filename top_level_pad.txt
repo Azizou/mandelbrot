@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue May 17 21:22:05 2016
+Wed May 18 01:36:30 2016
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -107,7 +107,7 @@ Pinout by Pin Number:
 |E13       |              |         |TDO_0                       |         |           |              |          |         |           |         |         |          |           |                |
 |E14       |              |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |E15       |              |IOB33M   |IO_L11P_T1_SRCC_15          |UNUSED   |           |15            |          |         |           |         |         |          |           |                |
-|E16       |reset         |IOB33    |IO_L11N_T1_SRCC_15          |INPUT    |LVCMOS33   |15            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|E16       |              |IOB33S   |IO_L11N_T1_SRCC_15          |UNUSED   |           |15            |          |         |           |         |         |          |           |                |
 |E17       |              |IOB33M   |IO_L16P_T2_A28_15           |UNUSED   |           |15            |          |         |           |         |         |          |           |                |
 |E18       |              |IOB33M   |IO_L21P_T3_DQS_15           |UNUSED   |           |15            |          |         |           |         |         |          |           |                |
 |F1        |              |IOB33M   |IO_L18P_T2_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |

@@ -20,4 +20,4 @@ NET "COLOUR_OUT<11>" LOC = "D8" | IOSTANDARD = LVCMOS33 | TIG; //Blue 3
 NET "HS" LOC = "B11" | IOSTANDARD = LVCMOS33 | TIG; //Horizontal Synch output
 NET "VS" LOC = "B12" | IOSTANDARD = LVCMOS33 | TIG; //Vertical Synch output
 
-NET "reset" LOC = E16 | IOSTANDARD = LVCMOS33 | TIG;
+//NET "reset" LOC = E16 | IOSTANDARD = LVCMOS33 | TIG;

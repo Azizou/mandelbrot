@@ -1,25 +1,35 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/bluelabuser/Desktop/Temp/fractal/pixel_gen_isim_beh.exe -prj /home/bluelabuser/Desktop/Temp/fractal/pixel_gen_beh.prj work.pixel_gen work.glbl 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/bluelabuser/Desktop/Temp/fractal/fractal_isim_beh.exe -prj /home/bluelabuser/Desktop/Temp/fractal/fractal_beh.prj work.fractal work.glbl 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Analyzing Verilog file "/home/bluelabuser/Desktop/Temp/fractal/ipcore_dir/bram.v" into library work
+Analyzing Verilog file "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" into library work
 Analyzing Verilog file "/home/bluelabuser/Desktop/Temp/fractal/pixel_gen.v" into library work
+Analyzing Verilog file "/home/bluelabuser/Desktop/Temp/fractal/diverge_pipe.v" into library work
+Analyzing Verilog file "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" into library work
 Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1016 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Port sum is not connected to this instance
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
 Completed static elaboration
-Fuse Memory Usage: 96936 KB
-Fuse CPU Usage: 820 ms
+Fuse Memory Usage: 97264 KB
+Fuse CPU Usage: 970 ms
+Compiling module diverge_pipe
+Compiling module vga_sync
 Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
 Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
 Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
 Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="artix...
 Compiling module bram
 Compiling module pixel_gen
+Compiling module fractal
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Compiled 7 Verilog Units
-Built simulation executable /home/bluelabuser/Desktop/Temp/fractal/pixel_gen_isim_beh.exe
-Fuse Memory Usage: 660440 KB
-Fuse CPU Usage: 860 ms
-GCC CPU Usage: 890 ms
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 10 Verilog Units
+Built simulation executable /home/bluelabuser/Desktop/Temp/fractal/fractal_isim_beh.exe
+Fuse Memory Usage: 660752 KB
+Fuse CPU Usage: 1020 ms
+GCC CPU Usage: 1340 ms

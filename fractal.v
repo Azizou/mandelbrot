@@ -59,6 +59,7 @@ wire [11:0] color_next;
 wire [6:0]din;
 wire [18:0]addr_w;
 wire wea;
+reg read_enable = 1'b0;
 
 //populate grid values
 //always @(*) begin
@@ -92,7 +93,7 @@ vga_sync vga_sync_unit(.CLK_100MHz(Clk_100M), .reset(reset),
 	
 pixel_gen bitmap(.CLK_100MHz(Clk_100M), .reset(reset), 
 	.video_on(video_on), .pixel_x(pixel_x), .pixel_y(pixel_y), .color(color_next), .addr_w(addr_w), .dina(din)
-	, .wea(wea));
+	, .wea(wea), .read_enable(read_enable));
 
 
 always @(posedge Clk_100M)
@@ -110,7 +111,7 @@ assign stage_no_op[0] = 1'd0;
 
 assign din = stage_div[62];
 assign addr_w = currAddr;
-assign wea = en_reg;
+assign wea = 1'b1;//en_reg;
 //test var
 assign divOut = stage_div[62];
 assign xTest = stage_x[1];
@@ -122,6 +123,7 @@ assign c2Test = stage_c2[1];
 reg en_reg;
 
 reg [2:0]ClkCount = 3'd0;
+
 reg [25:0]xRegTemp;
 reg [25:0]yRegTemp;
 
@@ -134,20 +136,37 @@ begin
 	ClkCount <= 3'd0;
 	if(colCount == 10'd639) begin
 		colCount <= 10'd0;
+		xRegTemp <= stepX*colCount;
+		xReg1    <= startX + xRegTemp[15:0]; 
+		yRegTemp <= stepY*rowCount;
+		yReg1    <= startY + yRegTemp[15:0];
+		currAddr <= {10'b0,rowCount}*640 + {9'b0,colCount};
+		//colCount <= colCount + 1'b1;
+		en_reg <= 1'b1;
+		
 		rowCount <= rowCount + 9'd1;
 		if(rowCount == 9'd479) begin
 			rowCount <= 9'd0;
+			read_enable <= 1'b1;
 		end
 	end
-
+	else begin
 	xRegTemp <= stepX*colCount;
 	xReg1    <= startX + xRegTemp[15:0]; 
 	yRegTemp <= stepY*rowCount;
 	yReg1    <= startY + yRegTemp[15:0];
 	
-	currAddr <= (({{1'b0}, rowCount} * 11'd640) + colCount) - 11'd63;
+	
+	
+	//currAddr <= (({{1'b0}, rowCount} * 11'd640) + colCount) - 11'd63;
+	
+	 currAddr <= {10'b0,rowCount}*640 + {9'b0,colCount};//{pixel_y[8:0], pixel_x[9:0]};//19 bit address
+
+	//currAddr <= (({{10'b0}, rowCount} * 640) + {9'b0, colCount}) - 18'd63;
+
 	en_reg <= 1'b1;
-	colCount <= colCount + 1;
+	colCount <= colCount + 1'b1;
+	end
  end
  else begin
 	en_reg <= 1'b0;

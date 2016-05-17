@@ -49,6 +49,14 @@ module vga_sync(
 	reg  [1:0]mod4_reg;
 	wire  [1:0]mod4_next;
 	
+	initial begin
+		mod4_reg <= 2'b0;
+		h_count_reg <=0;
+		v_count_reg <=0;
+		h_sync_reg  <=1'b0;
+		v_sync_reg  <=1'b0;
+	end
+	
 	always@(posedge CLK_100MHz, posedge reset)
 		if(reset)
 			begin

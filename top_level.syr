@@ -5,7 +5,7 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
@@ -129,93 +129,91 @@ Parsing module <top_level>.
 =========================================================================
 
 Elaborating module <top_level>.
-WARNING:HDLCompiler:1016 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 81: Port sum is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Port sum is not connected to this instance
 
 Elaborating module <fractal>.
 
 Elaborating module <diverge_pipe>.
 WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/diverge_pipe.v" Line 76: Result of 34-bit expression is truncated to fit in 33-bit target.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
 
 Elaborating module <vga_sync>.
-WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" Line 70: Result of 3-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" Line 83: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" Line 95: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" Line 78: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" Line 91: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" Line 103: Result of 11-bit expression is truncated to fit in 10-bit target.
 
 Elaborating module <pixel_gen>.
 
 Elaborating module <bram>.
 WARNING:HDLCompiler:1499 - "/home/bluelabuser/Desktop/Temp/fractal/ipcore_dir/bram.v" Line 39: Empty module <bram> remains a black box.
-WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 111: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 150: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 44: Assignment to divOut ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 45: Assignment to xTest ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 46: Assignment to yTest ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 47: Assignment to c1Test ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 48: Assignment to c2Test ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 49: Assignment to HS ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 50: Assignment to VS ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/pixel_gen.v" Line 47: Result of 21-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 112: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 143: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 164: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 132: Assignment to en_reg ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 39: Assignment to divOut ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 40: Assignment to c2Test ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -225,109 +223,108 @@ Synthesizing Unit <top_level>.
     Related source file is "/home/bluelabuser/Desktop/Temp/fractal/top_level.v".
 WARNING:Xst:647 - Input <VS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <HS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 37: Output port <divOut> of the instance <frac> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 37: Output port <xTest> of the instance <frac> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 37: Output port <yTest> of the instance <frac> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 37: Output port <c1Test> of the instance <frac> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 37: Output port <c2Test> of the instance <frac> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 37: Output port <HS> of the instance <frac> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 37: Output port <VS> of the instance <frac> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <divOut> of the instance <frac> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <xTest> of the instance <frac> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <yTest> of the instance <frac> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <c1Test> of the instance <frac> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <c2Test> of the instance <frac> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <HS> of the instance <frac> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <VS> of the instance <frac> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <top_level> synthesized.
 
 Synthesizing Unit <fractal>.
     Related source file is "/home/bluelabuser/Desktop/Temp/fractal/fractal.v".
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[0].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[1].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[2].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[3].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[4].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[5].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[6].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[7].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[8].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[9].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[10].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[11].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[12].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[13].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[14].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[15].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[16].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[17].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[18].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[19].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[20].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[21].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[22].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[23].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[24].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[25].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[26].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[27].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[28].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[29].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[30].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[31].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[32].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[33].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[34].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[35].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[36].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[37].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[38].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[39].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[40].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[41].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[42].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[43].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[44].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[45].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[46].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[47].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[48].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[49].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[50].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[51].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[52].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[53].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[54].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[55].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[56].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[57].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[58].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[59].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[60].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <newX> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <newY> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <newC1> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <newC2> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <sum> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 81: Output port <new_no_op> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[0].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[1].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[2].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[3].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[4].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[5].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[6].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[7].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[8].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[9].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[10].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[11].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[12].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[13].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[14].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[15].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[16].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[17].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[18].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[19].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[20].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[21].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[22].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[23].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[24].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[25].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[26].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[27].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[28].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[29].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[30].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[31].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[32].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[33].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[34].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[35].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[36].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[37].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[38].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[39].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[40].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[41].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[42].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[43].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[44].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[45].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[46].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[47].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[48].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[49].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[50].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[51].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[52].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[53].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[54].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[55].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[56].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[57].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[58].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[59].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[60].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <newX> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <newY> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <newC1> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <newC2> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <new_no_op> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
     Found 3-bit register for signal <ClkCount>.
     Found 10-bit register for signal <colCount>.
-    Found 9-bit register for signal <rowCount>.
     Found 26-bit register for signal <xRegTemp>.
     Found 16-bit register for signal <xReg1>.
     Found 26-bit register for signal <yRegTemp>.
     Found 16-bit register for signal <yReg1>.
     Found 19-bit register for signal <currAddr>.
-    Found 1-bit register for signal <en_reg>.
+    Found 9-bit register for signal <rowCount>.
+    Found 1-bit register for signal <read_enable>.
     Found 12-bit register for signal <color>.
-    Found 19-bit subtractor for signal <rowCount[8]_GND_2_o_sub_32_OUT> created at line 148.
-    Found 3-bit adder for signal <ClkCount[2]_GND_2_o_add_17_OUT> created at line 132.
-    Found 9-bit adder for signal <rowCount[8]_GND_2_o_add_20_OUT> created at line 137.
-    Found 16-bit adder for signal <startX[15]_xRegTemp[15]_add_26_OUT> created at line 144.
-    Found 16-bit adder for signal <startY[15]_yRegTemp[15]_add_28_OUT> created at line 146.
-    Found 19-bit adder for signal <rowCount[8]_GND_2_o_add_30_OUT> created at line 148.
-    Found 10-bit adder for signal <colCount[9]_GND_2_o_add_32_OUT> created at line 150.
-    Found 16x10-bit multiplier for signal <stepX[15]_colCount[9]_MuLt_25_OUT> created at line 143.
-    Found 16x9-bit multiplier for signal <stepY[15]_rowCount[8]_MuLt_27_OUT> created at line 145.
-    Found 9x10-bit multiplier for signal <n0413> created at line 148.
+    Found 3-bit adder for signal <ClkCount[2]_GND_2_o_add_17_OUT> created at line 134.
+    Found 9-bit adder for signal <rowCount[8]_GND_2_o_add_26_OUT> created at line 147.
+    Found 16-bit adder for signal <startX[15]_xRegTemp[15]_add_30_OUT> created at line 156.
+    Found 16-bit adder for signal <startY[15]_yRegTemp[15]_add_32_OUT> created at line 158.
+    Found 19-bit adder for signal <rowCount[8]_GND_2_o_add_34_OUT> created at line 164.
+    Found 10-bit adder for signal <colCount[9]_GND_2_o_add_35_OUT> created at line 169.
+    Found 16x10-bit multiplier for signal <stepX[15]_colCount[9]_MuLt_29_OUT> created at line 155.
+    Found 16x9-bit multiplier for signal <stepY[15]_rowCount[8]_MuLt_31_OUT> created at line 157.
+    Found 9x10-bit multiplier for signal <n0427> created at line 164.
     Summary:
 	inferred   3 Multiplier(s).
-	inferred   7 Adder/Subtractor(s).
+	inferred   6 Adder/Subtractor(s).
 	inferred 138 D-type flip-flop(s).
 Unit <fractal> synthesized.
 
@@ -346,12 +343,12 @@ Synthesizing Unit <diverge_pipe>.
     Found 16-bit subtractor for signal <newX[15]_unary_minus_1_OUT> created at line 50.
     Found 16-bit subtractor for signal <newY[15]_unary_minus_3_OUT> created at line 51.
     Found 33-bit subtractor for signal <GND_3_o_GND_3_o_sub_13_OUT> created at line 71.
-    Found 34-bit subtractor for signal <n0058> created at line 71.
-    Found 34-bit adder for signal <n0059> created at line 76.
-    Found 33-bit adder for signal <n0070> created at line 80.
+    Found 34-bit subtractor for signal <n0059> created at line 71.
+    Found 34-bit adder for signal <n0060> created at line 76.
+    Found 33-bit adder for signal <n0071> created at line 80.
     Found 16x16-bit multiplier for signal <x_sqr> created at line 52.
     Found 16x16-bit multiplier for signal <y_sqr> created at line 53.
-    Found 16x16-bit multiplier for signal <n0052> created at line 61.
+    Found 16x16-bit multiplier for signal <n0053> created at line 61.
     Found 16x16-bit multiplier for signal <x[15]_x[15]_MuLt_10_OUT> created at line 71.
     Found 16x16-bit multiplier for signal <y[15]_y[15]_MuLt_11_OUT> created at line 71.
     Found 33-bit comparator greater for signal <GND_3_o_squareSum[32]_LessThan_17_o> created at line 83
@@ -367,32 +364,34 @@ Synthesizing Unit <vga_sync>.
     Related source file is "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v".
     Found 10-bit register for signal <h_count_reg>.
     Found 10-bit register for signal <v_count_reg>.
-    Found 2-bit register for signal <mod4_reg>.
     Found 1-bit register for signal <h_sync_reg>.
     Found 1-bit register for signal <v_sync_reg>.
-    Found 2-bit adder for signal <mod4_next> created at line 70.
-    Found 10-bit adder for signal <h_count_reg[9]_GND_7_o_add_7_OUT> created at line 83.
-    Found 10-bit adder for signal <v_count_reg[9]_GND_7_o_add_11_OUT> created at line 95.
-    Found 10-bit comparator lessequal for signal <n0017> created at line 100
-    Found 10-bit comparator lessequal for signal <n0019> created at line 100
-    Found 10-bit comparator lessequal for signal <n0022> created at line 101
-    Found 10-bit comparator lessequal for signal <n0024> created at line 101
-    Found 10-bit comparator greater for signal <h_count_reg[9]_PWR_8_o_LessThan_19_o> created at line 104
-    Found 10-bit comparator greater for signal <v_count_reg[9]_GND_7_o_LessThan_20_o> created at line 104
+    Found 2-bit register for signal <mod4_reg>.
+    Found 2-bit adder for signal <mod4_next> created at line 78.
+    Found 10-bit adder for signal <h_count_reg[9]_GND_7_o_add_7_OUT> created at line 91.
+    Found 10-bit adder for signal <v_count_reg[9]_GND_7_o_add_11_OUT> created at line 103.
+    Found 10-bit comparator lessequal for signal <n0017> created at line 108
+    Found 10-bit comparator lessequal for signal <n0019> created at line 108
+    Found 10-bit comparator lessequal for signal <n0022> created at line 109
+    Found 10-bit comparator lessequal for signal <n0024> created at line 109
+    Found 10-bit comparator greater for signal <h_count_reg[9]_PWR_8_o_LessThan_19_o> created at line 112
+    Found 10-bit comparator greater for signal <v_count_reg[9]_GND_7_o_LessThan_20_o> created at line 112
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  24 D-type flip-flop(s).
 	inferred   6 Comparator(s).
-	inferred   2 Multiplexer(s).
 Unit <vga_sync> synthesized.
 
 Synthesizing Unit <pixel_gen>.
     Related source file is "/home/bluelabuser/Desktop/Temp/fractal/pixel_gen.v".
         width = 7
         DATASIZE = 307200
-WARNING:Xst:647 - Input <pixel_y<9:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 20-bit adder for signal <n0012> created at line 47.
+    Found 10x10-bit multiplier for signal <n0019> created at line 47.
     Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
 	inferred   1 Multiplexer(s).
 Unit <pixel_gen> synthesized.
 
@@ -400,7 +399,8 @@ Unit <pixel_gen> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Multipliers                                          : 313
+# Multipliers                                          : 314
+ 10x10-bit multiplier                                  : 1
  10x9-bit multiplier                                   : 1
  16x10-bit multiplier                                  : 1
  16x16-bit multiplier                                  : 310
@@ -410,8 +410,8 @@ Macro Statistics
  16-bit adder                                          : 2
  16-bit subtractor                                     : 124
  19-bit adder                                          : 1
- 19-bit subtractor                                     : 1
  2-bit adder                                           : 1
+ 20-bit adder                                          : 1
  3-bit adder                                           : 1
  33-bit adder                                          : 62
  33-bit subtractor                                     : 62
@@ -435,8 +435,7 @@ Macro Statistics
  10-bit comparator greater                             : 2
  10-bit comparator lessequal                           : 4
  33-bit comparator greater                             : 62
-# Multiplexers                                         : 375
- 10-bit 2-to-1 multiplexer                             : 2
+# Multiplexers                                         : 373
  12-bit 2-to-1 multiplexer                             : 1
  16-bit 2-to-1 multiplexer                             : 248
  8-bit 2-to-1 multiplexer                              : 124
@@ -1528,22 +1527,27 @@ WARNING:Xst:2677 - Node <yRegTemp_25> of sequential type is unconnected in block
 WARNING:Xst:2404 -  FFs/Latches <yRegTemp<25:25>> (without init value) have a constant value of 0 in block <fractal>.
 
 Synthesizing (advanced) Unit <diverge_pipe>.
-	Multiplier <Mmult_x_sqr> in block <diverge_pipe> and adder/subtractor <Madd_n0070> in block <diverge_pipe> are combined into a MAC<Maddsub_x_sqr>.
+	Multiplier <Mmult_x_sqr> in block <diverge_pipe> and adder/subtractor <Madd_n0071> in block <diverge_pipe> are combined into a MAC<Maddsub_x_sqr>.
 	The following registers are also absorbed by the MAC: <squareSum> in block <diverge_pipe>.
-	Multiplier <Mmult_x[15]_x[15]_MuLt_10_OUT> in block <diverge_pipe> and adder/subtractor <Msub_n0058_Madd> in block <diverge_pipe> are combined into a MAC<Maddsub_x[15]_x[15]_MuLt_10_OUT>.
+	Multiplier <Mmult_x[15]_x[15]_MuLt_10_OUT> in block <diverge_pipe> and adder/subtractor <Msub_n0059_Madd> in block <diverge_pipe> are combined into a MAC<Maddsub_x[15]_x[15]_MuLt_10_OUT>.
 	Multiplier <Mmult_y[15]_y[15]_MuLt_11_OUT> in block <diverge_pipe> and adder/subtractor <Msub_GND_3_o_GND_3_o_sub_13_OUT_Madd> in block <diverge_pipe> are combined into a MAC<Maddsub_y[15]_y[15]_MuLt_11_OUT>.
 Unit <diverge_pipe> synthesized (advanced).
 
 Synthesizing (advanced) Unit <fractal>.
+The following registers are absorbed into counter <colCount>: 1 register on signal <colCount>.
 The following registers are absorbed into counter <ClkCount>: 1 register on signal <ClkCount>.
 The following registers are absorbed into counter <rowCount>: 1 register on signal <rowCount>.
-The following registers are absorbed into counter <colCount>: 1 register on signal <colCount>.
-	Multiplier <Mmult_stepY[15]_rowCount[8]_MuLt_27_OUT> in block <fractal> and adder/subtractor <Madd_startY[15]_yRegTemp[15]_add_28_OUT> in block <fractal> are combined into a MAC<Maddsub_stepY[15]_rowCount[8]_MuLt_27_OUT>.
+	Multiplier <Mmult_stepY[15]_rowCount[8]_MuLt_31_OUT> in block <fractal> and adder/subtractor <Madd_startY[15]_yRegTemp[15]_add_32_OUT> in block <fractal> are combined into a MAC<Maddsub_stepY[15]_rowCount[8]_MuLt_31_OUT>.
 	The following registers are also absorbed by the MAC: <yRegTemp> in block <fractal>, <yReg1> in block <fractal>.
-	Multiplier <Mmult_stepX[15]_colCount[9]_MuLt_25_OUT> in block <fractal> and adder/subtractor <Madd_startX[15]_xRegTemp[15]_add_26_OUT> in block <fractal> are combined into a MAC<Maddsub_stepX[15]_colCount[9]_MuLt_25_OUT>.
+	Multiplier <Mmult_stepX[15]_colCount[9]_MuLt_29_OUT> in block <fractal> and adder/subtractor <Madd_startX[15]_xRegTemp[15]_add_30_OUT> in block <fractal> are combined into a MAC<Maddsub_stepX[15]_colCount[9]_MuLt_29_OUT>.
 	The following registers are also absorbed by the MAC: <xRegTemp> in block <fractal>, <xReg1> in block <fractal>.
-	Multiplier <Mmult_n0413> in block <fractal> and adder/subtractor <Madd_rowCount[8]_GND_2_o_add_30_OUT> in block <fractal> are combined into a MAC<Maddsub_n0413>.
+	Multiplier <Mmult_n0427> in block <fractal> and adder/subtractor <Madd_rowCount[8]_GND_2_o_add_34_OUT> in block <fractal> are combined into a MAC<Maddsub_n0427>.
+	The following registers are also absorbed by the MAC: <currAddr> in block <fractal>.
 Unit <fractal> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pixel_gen>.
+	Multiplier <Mmult_n0019> in block <pixel_gen> and adder/subtractor <Madd_n0012_Madd> in block <pixel_gen> are combined into a MAC<Maddsub_n0019>.
+Unit <pixel_gen> synthesized (advanced).
 
 Synthesizing (advanced) Unit <vga_sync>.
 The following registers are absorbed into counter <mod4_reg>: 1 register on signal <mod4_reg>.
@@ -1572,7 +1576,8 @@ WARNING:Xst:2677 - Node <newY_t_32> of sequential type is unconnected in block <
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# MACs                                                 : 189
+# MACs                                                 : 190
+ 10x10-to-19-bit MAC                                   : 1
  10x9-to-19-bit MAC                                    : 1
  16x16-to-28-bit MAC                                   : 124
  16x16-to-33-bit MAC                                   : 62
@@ -1580,17 +1585,16 @@ Macro Statistics
  7x9-to-16-bit MAC                                     : 1
 # Multipliers                                          : 124
  16x16-bit multiplier                                  : 124
-# Adders/Subtractors                                   : 187
+# Adders/Subtractors                                   : 186
  16-bit subtractor                                     : 124
- 19-bit subtractor                                     : 1
  33-bit adder                                          : 62
 # Counters                                             : 6
  10-bit up counter                                     : 3
  2-bit up counter                                      : 1
  3-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 8652
- Flip-Flops                                            : 8652
+# Registers                                            : 8633
+ Flip-Flops                                            : 8633
 # Comparators                                          : 68
  10-bit comparator greater                             : 2
  10-bit comparator lessequal                           : 4
@@ -1605,10 +1609,10 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <sum_32> in Unit <diverge_pipe> is equivalent to the following FF/Latch, which will be removed : <sum_33> 
-INFO:Xst:2261 - The FF/Latch <color_2> in Unit <fractal> is equivalent to the following FF/Latch, which will be removed : <color_4> 
-INFO:Xst:2261 - The FF/Latch <color_7> in Unit <fractal> is equivalent to the following FF/Latch, which will be removed : <color_8> 
-INFO:Xst:2261 - The FF/Latch <color_3> in Unit <fractal> is equivalent to the following 2 FFs/Latches, which will be removed : <color_5> <color_11> 
 INFO:Xst:2261 - The FF/Latch <color_0> in Unit <fractal> is equivalent to the following 4 FFs/Latches, which will be removed : <color_1> <color_6> <color_9> <color_10> 
+INFO:Xst:2261 - The FF/Latch <color_2> in Unit <fractal> is equivalent to the following FF/Latch, which will be removed : <color_4> 
+INFO:Xst:2261 - The FF/Latch <color_3> in Unit <fractal> is equivalent to the following 2 FFs/Latches, which will be removed : <color_5> <color_11> 
+INFO:Xst:2261 - The FF/Latch <color_7> in Unit <fractal> is equivalent to the following FF/Latch, which will be removed : <color_8> 
 WARNING:Xst:1710 - FF/Latch <color_7> (without init value) has a constant value of 0 in block <fractal>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <top_level> ...
@@ -3788,6 +3792,7 @@ WARNING:Xst:2677 - Node <sum_32> of sequential type is unconnected in block <gen
 WARNING:Xst:2677 - Node <newDiv_7> of sequential type is unconnected in block <gen_loop[0].div_pipe_instance>.
 WARNING:Xst:2677 - Node <vga_sync_unit/v_sync_reg> of sequential type is unconnected in block <frac>.
 WARNING:Xst:2677 - Node <vga_sync_unit/h_sync_reg> of sequential type is unconnected in block <frac>.
+INFO:Xst:2261 - The FF/Latch <ClkCount_0> in Unit <frac> is equivalent to the following FF/Latch, which will be removed : <vga_sync_unit/mod4_reg_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -4047,8 +4052,8 @@ Unit <gen_loop[9].div_pipe_instance> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 5352
- Flip-Flops                                            : 5352
+# Registers                                            : 5370
+ Flip-Flops                                            : 5370
 # Shift Registers                                      : 62
  2-bit shift register                                  : 62
 
@@ -4073,27 +4078,26 @@ Top Level Output File Name         : top_level.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 98181
+# BELS                             : 98288
 #      GND                         : 64
-#      INV                         : 2734
-#      LUT1                        : 1383
-#      LUT2                        : 23258
-#      LUT3                        : 3873
+#      INV                         : 2735
+#      LUT1                        : 1415
+#      LUT2                        : 23277
+#      LUT3                        : 3859
 #      LUT4                        : 7668
-#      LUT5                        : 439
-#      LUT6                        : 399
-#      MUXCY                       : 29237
+#      LUT5                        : 437
+#      LUT6                        : 396
+#      MUXCY                       : 29273
 #      MUXF7                       : 7
 #      VCC                         : 64
-#      XORCY                       : 29055
-# FlipFlops/Latches                : 5421
+#      XORCY                       : 29093
+# FlipFlops/Latches                : 5439
 #      FD                          : 5212
-#      FDC                         : 2
-#      FDCE                        : 20
-#      FDE                         : 114
+#      FDE                         : 123
 #      FDR                         : 3
-#      FDRE                        : 9
+#      FDRE                        : 39
 #      FDS                         : 61
+#      FDSE                        : 1
 # RAMS                             : 68
 #      RAMB18E1                    : 4
 #      RAMB36E1                    : 64
@@ -4101,8 +4105,7 @@ Primitive and Black Box Usage:
 #      SRLC16E                     : 62
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 13
-#      IBUF                        : 1
+# IO Buffers                       : 12
 #      OBUF                        : 12
 # DSPs                             : 190
 #      DSP48E1                     : 190
@@ -4114,22 +4117,22 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            5421  out of  126800     4%  
- Number of Slice LUTs:                39816  out of  63400    62%  
-    Number used as Logic:             39754  out of  63400    62%  
+ Number of Slice Registers:            5439  out of  126800     4%  
+ Number of Slice LUTs:                39849  out of  63400    62%  
+    Number used as Logic:             39787  out of  63400    62%  
     Number used as Memory:               62  out of  19000     0%  
        Number used as SRL:               62
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  43872
-   Number with an unused Flip Flop:   38451  out of  43872    87%  
-   Number with an unused LUT:          4056  out of  43872     9%  
-   Number of fully used LUT-FF pairs:  1365  out of  43872     3%  
-   Number of unique control sets:       194
+ Number of LUT Flip Flop pairs used:  43908
+   Number with an unused Flip Flop:   38469  out of  43908    87%  
+   Number with an unused LUT:          4059  out of  43908     9%  
+   Number of fully used LUT-FF pairs:  1380  out of  43908     3%  
+   Number of unique control sets:       195
 
 IO Utilization: 
- Number of IOs:                          16
- Number of bonded IOBs:                  14  out of    210     6%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  13  out of    210     6%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               66  out of    135    48%  
@@ -4158,7 +4161,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Clk_100M                           | BUFGP                  | 5679  |
+Clk_100M                           | BUFGP                  | 5695  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -4166,7 +4169,7 @@ Asynchronous Control Signals Information:
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                                                                                                                                        | Buffer(FF name)                                                                                                                                              | Load  |
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_1212(frac/bitmap/mem/XST_GND:G)                                                                                                                                                           | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B)| 72    |
+frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_1212(frac/bitmap/mem/XST_GND:G)                                                                                                                                                           | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram)    | 72    |
 frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
 frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
 frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
@@ -4230,7 +4233,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 8.459ns (Maximum Frequency: 118.213MHz)
-   Minimum input arrival time before clock: 0.725ns
+   Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 0.659ns
    Maximum combinational path delay: No path found
 
@@ -4241,7 +4244,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk_100M'
   Clock period: 8.459ns (frequency: 118.213MHz)
-  Total number of paths / destination ports: 14839591081 / 14770
+  Total number of paths / destination ports: 14839598965 / 14771
 -------------------------------------------------------------------------
 Delay:               8.459ns (Levels of Logic = 31)
   Source:            frac/gen_loop[60].div_pipe_instance/newY_0 (FF)
@@ -4291,26 +4294,6 @@ Delay:               8.459ns (Levels of Logic = 31)
                                        (71.6% logic, 28.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_100M'
-  Total number of paths / destination ports: 22 / 22
--------------------------------------------------------------------------
-Offset:              0.725ns (Levels of Logic = 2)
-  Source:            reset (PAD)
-  Destination:       frac/vga_sync_unit/v_count_reg_9 (FF)
-  Destination Clock: Clk_100M rising
-
-  Data Path: reset to frac/vga_sync_unit/v_count_reg_9
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            22   0.001   0.375  reset_IBUF (reset_IBUF)
-     begin scope: 'frac:reset'
-     FDC:CLR                   0.349          vga_sync_unit/mod4_reg_0
-    ----------------------------------------
-    Total                      0.725ns (0.350ns logic, 0.375ns route)
-                                       (48.3% logic, 51.7% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_100M'
   Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
@@ -4346,15 +4329,15 @@ Clk_100M       |    8.459|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 66.00 secs
-Total CPU time to Xst completion: 63.84 secs
+Total REAL time to Xst completion: 96.00 secs
+Total CPU time to Xst completion: 80.64 secs
  
 --> 
 
 
-Total memory usage is 772508 kilobytes
+Total memory usage is 773216 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 3345 (   0 filtered)
-Number of infos    :   80 (   0 filtered)
+Number of warnings : 3342 (   0 filtered)
+Number of infos    :   81 (   0 filtered)
 

@@ -1,6 +1,5 @@
 ISim log file
-Running: /home/bluelabuser/Desktop/Temp/fractal/pixel_gen_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/bluelabuser/Desktop/Temp/fractal/pixel_gen_isim_beh.wdb 
-INFO: There is another simulation running in the same directory. Using database file name isim4.wdb.
+Running: /home/bluelabuser/Desktop/Temp/fractal/fractal_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/bluelabuser/Desktop/Temp/fractal/fractal_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -8,12 +7,79 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 
 ----------------------------------------------------------------------
 This is a Full version of ISim.
+WARNING:  For instance fractal/\gen_loop[0].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[1].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[2].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[3].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[4].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[5].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[6].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[7].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[8].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[9].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[10].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[11].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[12].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[13].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[14].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[15].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[16].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[17].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[18].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[19].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[20].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[21].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[22].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[23].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[24].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[25].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[26].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[27].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[28].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[29].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[30].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[31].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[32].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[33].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[34].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[35].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[36].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[37].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[38].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[39].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[40].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[41].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[42].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[43].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[44].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[45].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[46].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[47].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[48].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[49].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[50].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[51].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[52].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[53].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[54].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[55].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[56].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[57].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[58].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[59].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[60].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance fractal/\gen_loop[61].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-Block Memory Generator CORE Generator module pixel_gen.mem.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator CORE Generator module fractal.bitmap.mem.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
 Finished circuit initialization process.
-# exit 0
-# exit 0
+# isim force add /fractal/Clk_100M 1 -radix bin -value 0 -radix bin -time 5 ns -repeat 10 ns
+# isim force add /fractal/startX 0000000000100010 -radix bin
+# isim force add /fractal/startY 0000000000100010 -radix bin
+# isim force add /fractal/stepX 0000000000100010 -radix bin
+# isim force add /fractal/stepY 0000000000100010 -radix bin
+# run all
+Stopped at time : 455510 ns : File "/home/bluelabuser/Desktop/Temp/fractal/diverge_pipe.v" Line 80

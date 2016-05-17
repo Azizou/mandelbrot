@@ -58,9 +58,9 @@ reg signed [32:0]newY_t;
 
 reg [32:0]xy;
 always @(*) begin
- xy[31:0] = x*y<<2;
- xy[32]   = xy[31];
- tempc1=c1;
+	xy[31:0] <= x*y<<2; // =
+	xy[32]   <= xy[31]; // =
+	tempc1=c1;
 	tempc2=c2;
 end
 

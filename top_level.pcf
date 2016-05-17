@@ -1,11 +1,10 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue May 17 21:19:18 2016
+// Written by: Map P.20131013 on Wed May 18 01:32:15 2016
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "HS" LOCATE = SITE "B11" LEVEL 1;
 COMP "VS" LOCATE = SITE "B12" LEVEL 1;
-COMP "reset" LOCATE = SITE "E16" LEVEL 1;
 COMP "Clk_100M" LOCATE = SITE "E3" LEVEL 1;
 COMP "COLOUR_OUT<11>" LOCATE = SITE "D8" LEVEL 1;
 COMP "COLOUR_OUT<10>" LOCATE = SITE "D7" LEVEL 1;
@@ -32,7 +31,6 @@ PIN COLOUR_OUT_3_OBUF_pins<1> = BEL "COLOUR_OUT_3_OBUF" PINNAME OUT;
 PIN COLOUR_OUT_2_OBUF_pins<1> = BEL "COLOUR_OUT_2_OBUF" PINNAME OUT;
 PIN COLOUR_OUT_1_OBUF_pins<1> = BEL "COLOUR_OUT_1_OBUF" PINNAME OUT;
 PIN COLOUR_OUT_0_OBUF_pins<1> = BEL "COLOUR_OUT_0_OBUF" PINNAME OUT;
-PIN reset_pins<0> = BEL "reset" PINNAME PAD;
 PIN VS_pins<0> = BEL "VS" PINNAME PAD;
 PIN HS_pins<0> = BEL "HS" PINNAME PAD;
 PIN "COLOUR_OUT_11_OBUF_pins<1>" TIG;
@@ -47,7 +45,6 @@ PIN "COLOUR_OUT_3_OBUF_pins<1>" TIG;
 PIN "COLOUR_OUT_2_OBUF_pins<1>" TIG;
 PIN "COLOUR_OUT_1_OBUF_pins<1>" TIG;
 PIN "COLOUR_OUT_0_OBUF_pins<1>" TIG;
-PIN "reset_pins<0>" TIG;
 PIN "VS_pins<0>" TIG;
 PIN "HS_pins<0>" TIG;
 SCHEMATIC END;
