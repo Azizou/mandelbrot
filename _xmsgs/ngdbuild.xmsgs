@@ -191,6 +191,9 @@
 <msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">frac/stage_div&lt;61&gt;&lt;7&gt;</arg>&apos; has no driver
 </msg>
 
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">frac/stage_div&lt;62&gt;&lt;7&gt;</arg>&apos; has no driver
+</msg>
+
 <msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">frac/divOut&lt;7&gt;</arg>&apos; has no driver
 </msg>
 

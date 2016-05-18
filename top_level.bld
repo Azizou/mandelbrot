@@ -81,6 +81,7 @@ WARNING:NgdBuild:452 - logical net 'frac/stage_div<58><7>' has no driver
 WARNING:NgdBuild:452 - logical net 'frac/stage_div<59><7>' has no driver
 WARNING:NgdBuild:452 - logical net 'frac/stage_div<60><7>' has no driver
 WARNING:NgdBuild:452 - logical net 'frac/stage_div<61><7>' has no driver
+WARNING:NgdBuild:452 - logical net 'frac/stage_div<62><7>' has no driver
 WARNING:NgdBuild:452 - logical net 'frac/divOut<7>' has no driver
 
 Partition Implementation Status
@@ -92,12 +93,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  62
+  Number of warnings:  63
 
-Total memory usage is 677648 kilobytes
+Total memory usage is 705828 kilobytes
 
 Writing NGD file "top_level.ngd" ...
-Total REAL time to NGDBUILD completion: 1 min  47 sec
-Total CPU time to NGDBUILD completion:  1 min  46 sec
+Total REAL time to NGDBUILD completion: 1 min  49 sec
+Total CPU time to NGDBUILD completion:  1 min  49 sec
 
 Writing NGDBUILD log file "top_level.bld"...

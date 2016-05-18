@@ -1,6 +1,5 @@
 ISim log file
 Running: /home/bluelabuser/Desktop/Temp/fractal/top_level_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/bluelabuser/Desktop/Temp/fractal/top_level_isim_beh.wdb 
-INFO: There is another simulation running in the same directory. Using database file name isim3.wdb.
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -70,6 +69,7 @@ WARNING:  For instance frac/\gen_loop[58].div_pipe_instance /, width 7 of formal
 WARNING:  For instance frac/\gen_loop[59].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
 WARNING:  For instance frac/\gen_loop[60].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
 WARNING:  For instance frac/\gen_loop[61].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
+WARNING:  For instance frac/\gen_loop[62].div_pipe_instance /, width 7 of formal port stage is not equal to width 32 of actual constant.
 WARNING: File "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 37.  For instance top_level/frac/, width 8 of formal port divOut is not equal to width 7 of actual signal divOut.
 Time resolution is 1 ps
 # onerror resume
@@ -78,7 +78,15 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Block Memory Generator CORE Generator module top_level.bitmap.mem.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
 Finished circuit initialization process.
-ERROR: at 0 ps: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation can not advance in time because signals can not resolve to a stable value in File "/home/bluelabuser/Desktop/Temp/fractal/pixel_gen.v" Line 54. Please correct this code in order to advance past the current simulation time.
- in File "/home/bluelabuser/Desktop/Temp/fractal/pixel_gen.v" Line 54 
-ERROR: 
-INFO: Simulator is stopped.
+# isim force add /top_level/Clk_100M 1 -radix bin -value 0 -radix bin -time 5 ns -repeat 10 ns
+# isim force add /top_level/Clk_100M 1 -radix bin -value 0 -radix bin -time 5 ns -repeat 10 ns
+# isim force add /top_level/Clk_100M 1 -radix bin -value 0 -radix bin -time 5 ns -repeat 10 ns
+# run all
+blk_mem_gen_v7_3 collision detected at time: 1070000, A write address: 0, B  read address: 0
+blk_mem_gen_v7_3 collision detected at time: 1080000, A write address: 0, B  read address: 0
+blk_mem_gen_v7_3 collision detected at time: 1090000, A write address: 0, B  read address: 0
+blk_mem_gen_v7_3 collision detected at time: 1100000, A write address: 0, B  read address: 0
+blk_mem_gen_v7_3 collision detected at time: 1110000, A write address: 0, B  read address: 0
+blk_mem_gen_v7_3 collision detected at time: 1120000, A write address: 1, B  read address: 0
+Stopped at time : 560050 ns : File "/home/bluelabuser/Desktop/Temp/fractal/diverge_pipe.v" Line 65
+# exit 0

@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 module top_level(
 	input wire Clk_100M,
-	input wire VS, HS,
+	output wire VS, HS,
 	output wire [11:0] COLOUR_OUT
     );
 	 wire reset;
-	 wire go;
+	 wire go;// = 1'b1;
 	 
 	wire [15:0]startX;
 	wire [15:0]startY;
@@ -44,17 +44,19 @@ module top_level(
 	wire [6:0]din;
 	wire [18:0]addr_w;
 	wire wea;
-
 	
-	fractal frac(.Clk_100M(Clk_100M),.reset(reset),.startX(startX),.startY(startY),
-	.stepX(stepX), .stepY(stepY),.divOut(divOut), .xTest(xTest), .yTest(yTest), .c1Test(c1Test),
-	.c2Test(c2Test), .addr_w(addr_w), .wea(wea),.display(go));
 	
 	assign reset = 1'b0;
 	assign startX = 16'b1110000000000000;
 	assign startY = 16'b1110000000000000;
 	assign stepX  = 16'b0000000000011001;
 	assign stepY  = 16'b0000000000100010;
+	
+	fractal frac(.Clk_100M(Clk_100M),.reset(reset),.startX(startX),.startY(startY),
+	.stepX(stepX), .stepY(stepY),.divOut(divOut), .xTest(xTest), .yTest(yTest), .c1Test(c1Test),
+	.c2Test(c2Test), .addr_w(addr_w), .wea(wea),.display(go));
+	
+
 	
 	
 	vga_sync vga_sync_unit(.CLK_100MHz(Clk_100M), .reset(reset), 

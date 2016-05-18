@@ -68,7 +68,7 @@ reg [15:0] yReg1;
 //generate modules 	
 genvar i;
 generate
-for(i = 0; i < 62; i = i+1) begin: gen_loop
+for(i = 0; i < 63; i = i+1) begin: gen_loop
 	diverge_pipe div_pipe_instance(Clk_100M, stage_x[i], stage_y[i], stage_c1[i], stage_c2[i],
 											stage_div[i], stage_no_op[i], i,
 											stage_x[i+1], stage_y[i+1], stage_c1[i+1], stage_c2[i+1],
@@ -88,7 +88,7 @@ assign stage_no_op[0] = 1'd0;
 assign addr_w = currAddr;
 assign wea = 1'b1;//en_reg;
 //test var
-assign divOut = stage_div[62];
+assign divOut = stage_div[63];
 assign xTest = stage_x[1];
 assign yTest = stage_y[1];
 assign c1Test = stage_c1[1];
@@ -112,7 +112,6 @@ begin
 	ClkCount <= 3'd0;
 	if(colCount == 10'd639) begin
 		colCount <= 10'd0;
-		tempGo <= 1'b1;
 		xRegTemp <= stepX*colCount;
 		xReg1    <= startX + xRegTemp[15:0]; 
 		yRegTemp <= stepY*rowCount;
@@ -123,6 +122,7 @@ begin
 		
 		rowCount <= rowCount + 9'd1;
 		if(rowCount == 9'd479) begin
+			tempGo <= 1'b1;
 			rowCount <= 9'd0;
 		end
 	end
