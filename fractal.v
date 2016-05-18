@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module fractal(
-input Clk_100M, reset,
+input Clk_100M, reset, 
 input [15:0]startX, //top left corner
 input [15:0]startY,
 input [15:0]stepX, //horizontal and vertical step sizes
@@ -29,9 +29,9 @@ output [15:0]xTest,
 output [15:0]yTest,
 output [15:0]c1Test,
 output [15:0]c2Test,
-output wire HS,
-output wire VS,
-output wire [11:0] COLOUR_OUT
+output [18:0] addr_w,
+output wire display,
+output wire wea
     );
 	
 
@@ -50,16 +50,6 @@ wire stage_no_op [63:0];
 
 reg [15:0] xReg1;
 reg [15:0] yReg1;
-
-
-wire video_on, pixel_tick;
-wire [9:0] pixel_x, pixel_y;
-reg [11:0] color;
-wire [11:0] color_next;
-wire [6:0]din;
-wire [18:0]addr_w;
-wire wea;
-reg read_enable = 1'b0;
 
 //populate grid values
 //always @(*) begin
@@ -86,21 +76,7 @@ for(i = 0; i < 62; i = i+1) begin: gen_loop
 end
 endgenerate
 
-vga_sync vga_sync_unit(.CLK_100MHz(Clk_100M), .reset(reset), 
-	.hsync(HS),.vsync(VS), .video_on(video_on), .p_tick(pixel_tick)
-	, .pixel_x(pixel_x), .pixel_y(pixel_y));
-	
-	
-pixel_gen bitmap(.CLK_100MHz(Clk_100M), .reset(reset), 
-	.video_on(video_on), .pixel_x(pixel_x), .pixel_y(pixel_y), .color(color_next), .addr_w(addr_w), .dina(din)
-	, .wea(wea), .read_enable(read_enable));
 
-
-always @(posedge Clk_100M)
-		if(pixel_tick)
-			color <= color_next;
-			
-	assign COLOUR_OUT = color;
 
 assign	stage_x[0] = xReg1;
 assign	stage_y[0] = yReg1;
@@ -109,7 +85,6 @@ assign	stage_c2[0] = yReg1;
 assign stage_div[0] = 8'd100;
 assign stage_no_op[0] = 1'd0;
 
-assign din = stage_div[62];
 assign addr_w = currAddr;
 assign wea = 1'b1;//en_reg;
 //test var
@@ -126,6 +101,7 @@ reg [2:0]ClkCount = 3'd0;
 
 reg [25:0]xRegTemp;
 reg [25:0]yRegTemp;
+reg tempGo =0;
 
 reg [18:0] currAddr;
 
@@ -136,6 +112,7 @@ begin
 	ClkCount <= 3'd0;
 	if(colCount == 10'd639) begin
 		colCount <= 10'd0;
+		tempGo <= 1'b1;
 		xRegTemp <= stepX*colCount;
 		xReg1    <= startX + xRegTemp[15:0]; 
 		yRegTemp <= stepY*rowCount;
@@ -147,7 +124,6 @@ begin
 		rowCount <= rowCount + 9'd1;
 		if(rowCount == 9'd479) begin
 			rowCount <= 9'd0;
-			read_enable <= 1'b1;
 		end
 	end
 	else begin
@@ -168,10 +144,12 @@ begin
 	colCount <= colCount + 1'b1;
 	end
  end
+ 
  else begin
 	en_reg <= 1'b0;
  end
 end	
+ assign display = tempGo;
 
 
 endmodule

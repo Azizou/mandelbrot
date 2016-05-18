@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module vga_sync(
-	input wire CLK_100MHz, reset,
+	input wire CLK_100MHz, reset,display,
 	output wire hsync, vsync, video_on, p_tick,
 	output wire [9:0] pixel_x, pixel_y
     );
@@ -68,11 +68,14 @@ module vga_sync(
 			end
 		else
 			begin
-				mod4_reg <= mod4_next;
-				h_count_reg <= h_count_next;
-				v_count_reg <= v_count_next;
-				h_sync_reg  <= h_sync_next;
-				v_sync_reg  <= v_sync_next;
+				if(display)
+				begin
+					mod4_reg <= mod4_next;
+					h_count_reg <= h_count_next;
+					v_count_reg <= v_count_next;
+					h_sync_reg  <= h_sync_next;
+					v_sync_reg  <= v_sync_next;
+				end
 			end
 	
 	assign mod4_next = (mod4_reg + 1);
@@ -83,7 +86,7 @@ module vga_sync(
 	
 	// next-state logic of mo-800
 	always @(*)
-		if(pixel_tick)
+		if(pixel_tick & display)
 			if(h_end)
 				h_count_next = 0;
 			else
@@ -96,7 +99,7 @@ module vga_sync(
 			
 	//next-state logic of mod-525
 	always @(*)
-		if(pixel_tick & h_end)
+		if(pixel_tick & h_end & display)
 			if(v_end)
 				v_count_next = 0;
 			else

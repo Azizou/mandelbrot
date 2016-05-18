@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-05-17T23:41:46</DateModified>
+  <DateModified>2016-05-18T02:06:48</DateModified>
   <ModuleName>top_level</ModuleName>
   <SummaryTimeStamp>2016-05-17T22:05:39</SummaryTimeStamp>
   <SavedFilePath>/home/bluelabuser/Desktop/Temp/fractal/iseconfig/top_level.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/bluelabuser/Desktop/Temp/fractal</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/bluelabuser/Desktop/Temp/fractal/</ImplementationReportsDirectory>
   <DateInitialized>2016-05-17T21:47:02</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

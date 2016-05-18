@@ -5,7 +5,7 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
@@ -113,12 +113,12 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 Analyzing Verilog file "/home/bluelabuser/Desktop/Temp/fractal/ipcore_dir/bram.v" into library work
 Parsing module <bram>.
+Analyzing Verilog file "/home/bluelabuser/Desktop/Temp/fractal/diverge_pipe.v" into library work
+Parsing module <diverge_pipe>.
 Analyzing Verilog file "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" into library work
 Parsing module <vga_sync>.
 Analyzing Verilog file "/home/bluelabuser/Desktop/Temp/fractal/pixel_gen.v" into library work
 Parsing module <pixel_gen>.
-Analyzing Verilog file "/home/bluelabuser/Desktop/Temp/fractal/diverge_pipe.v" into library work
-Parsing module <diverge_pipe>.
 Analyzing Verilog file "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" into library work
 Parsing module <fractal>.
 Analyzing Verilog file "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" into library work
@@ -127,93 +127,96 @@ Parsing module <top_level>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
+WARNING:HDLCompiler:1016 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 65: Port read_enable is not connected to this instance
 
 Elaborating module <top_level>.
-WARNING:HDLCompiler:1016 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 82: Port sum is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 72: Port sum is not connected to this instance
 
 Elaborating module <fractal>.
 
 Elaborating module <diverge_pipe>.
 WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/diverge_pipe.v" Line 76: Result of 34-bit expression is truncated to fit in 33-bit target.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 83: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 120: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 139: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 108: Assignment to en_reg ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 51: Assignment to xTest ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 52: Assignment to c2Test ignored, since the identifier is never used
 
 Elaborating module <vga_sync>.
-WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" Line 78: Result of 3-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" Line 91: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" Line 103: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" Line 81: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" Line 94: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/vga_sync.v" Line 106: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 61: Assignment to HS ignored, since the identifier is never used
 
 Elaborating module <pixel_gen>.
 
 Elaborating module <bram>.
 WARNING:HDLCompiler:1499 - "/home/bluelabuser/Desktop/Temp/fractal/ipcore_dir/bram.v" Line 39: Empty module <bram> remains a black box.
 WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/pixel_gen.v" Line 47: Result of 21-bit expression is truncated to fit in 19-bit target.
-WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 112: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 143: Result of 20-bit expression is truncated to fit in 19-bit target.
-WARNING:HDLCompiler:413 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 164: Result of 20-bit expression is truncated to fit in 19-bit target.
-WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 132: Assignment to en_reg ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 39: Assignment to divOut ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 40: Assignment to c2Test ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 66: Size mismatch in connection of port <dina>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:552 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 65: Input port read_enable is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -221,111 +224,112 @@ WARNING:HDLCompiler:1127 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" 
 
 Synthesizing Unit <top_level>.
     Related source file is "/home/bluelabuser/Desktop/Temp/fractal/top_level.v".
+WARNING:Xst:2898 - Port 'read_enable', unconnected in block instance 'bitmap', is tied to GND.
 WARNING:Xst:647 - Input <VS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <HS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <divOut> of the instance <frac> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <xTest> of the instance <frac> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <yTest> of the instance <frac> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <c1Test> of the instance <frac> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <c2Test> of the instance <frac> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <HS> of the instance <frac> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 38: Output port <VS> of the instance <frac> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 50: Output port <xTest> of the instance <frac> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 50: Output port <yTest> of the instance <frac> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 50: Output port <c1Test> of the instance <frac> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 50: Output port <c2Test> of the instance <frac> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 60: Output port <hsync> of the instance <vga_sync_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" line 60: Output port <vsync> of the instance <vga_sync_unit> is unconnected or connected to loadless signal.
+    Found 12-bit register for signal <COLOUR_OUT>.
     Summary:
-	no macro.
+	inferred  12 D-type flip-flop(s).
 Unit <top_level> synthesized.
 
 Synthesizing Unit <fractal>.
     Related source file is "/home/bluelabuser/Desktop/Temp/fractal/fractal.v".
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[0].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[1].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[2].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[3].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[4].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[5].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[6].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[7].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[8].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[9].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[10].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[11].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[12].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[13].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[14].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[15].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[16].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[17].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[18].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[19].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[20].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[21].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[22].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[23].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[24].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[25].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[26].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[27].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[28].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[29].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[30].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[31].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[32].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[33].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[34].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[35].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[36].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[37].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[38].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[39].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[40].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[41].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[42].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[43].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[44].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[45].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[46].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[47].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[48].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[49].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[50].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[51].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[52].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[53].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[54].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[55].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[56].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[57].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[58].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[59].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[60].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <newX> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <newY> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <newC1> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <newC2> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <sum> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 82: Output port <new_no_op> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
-    Found 3-bit register for signal <ClkCount>.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[0].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[1].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[2].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[3].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[4].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[5].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[6].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[7].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[8].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[9].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[10].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[11].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[12].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[13].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[14].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[15].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[16].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[17].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[18].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[19].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[20].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[21].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[22].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[23].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[24].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[25].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[26].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[27].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[28].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[29].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[30].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[31].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[32].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[33].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[34].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[35].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[36].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[37].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[38].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[39].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[40].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[41].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[42].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[43].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[44].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[45].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[46].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[47].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[48].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[49].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[50].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[51].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[52].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[53].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[54].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[55].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[56].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[57].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[58].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[59].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[60].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <newX> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <newY> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <newC1> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <newC2> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <sum> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" line 72: Output port <new_no_op> of the instance <gen_loop[61].div_pipe_instance> is unconnected or connected to loadless signal.
     Found 10-bit register for signal <colCount>.
+    Found 1-bit register for signal <tempGo>.
     Found 26-bit register for signal <xRegTemp>.
     Found 16-bit register for signal <xReg1>.
     Found 26-bit register for signal <yRegTemp>.
     Found 16-bit register for signal <yReg1>.
     Found 19-bit register for signal <currAddr>.
     Found 9-bit register for signal <rowCount>.
-    Found 1-bit register for signal <read_enable>.
-    Found 12-bit register for signal <color>.
-    Found 3-bit adder for signal <ClkCount[2]_GND_2_o_add_17_OUT> created at line 134.
-    Found 9-bit adder for signal <rowCount[8]_GND_2_o_add_26_OUT> created at line 147.
-    Found 16-bit adder for signal <startX[15]_xRegTemp[15]_add_30_OUT> created at line 156.
-    Found 16-bit adder for signal <startY[15]_yRegTemp[15]_add_32_OUT> created at line 158.
-    Found 19-bit adder for signal <rowCount[8]_GND_2_o_add_34_OUT> created at line 164.
-    Found 10-bit adder for signal <colCount[9]_GND_2_o_add_35_OUT> created at line 169.
-    Found 16x10-bit multiplier for signal <stepX[15]_colCount[9]_MuLt_29_OUT> created at line 155.
-    Found 16x9-bit multiplier for signal <stepY[15]_rowCount[8]_MuLt_31_OUT> created at line 157.
-    Found 9x10-bit multiplier for signal <n0427> created at line 164.
+    Found 3-bit register for signal <ClkCount>.
+    Found 3-bit adder for signal <ClkCount[2]_GND_2_o_add_12_OUT> created at line 110.
+    Found 9-bit adder for signal <rowCount[8]_GND_2_o_add_21_OUT> created at line 124.
+    Found 16-bit adder for signal <startX[15]_xRegTemp[15]_add_25_OUT> created at line 131.
+    Found 16-bit adder for signal <startY[15]_yRegTemp[15]_add_27_OUT> created at line 133.
+    Found 19-bit adder for signal <rowCount[8]_GND_2_o_add_29_OUT> created at line 139.
+    Found 10-bit adder for signal <colCount[9]_GND_2_o_add_30_OUT> created at line 144.
+    Found 16x10-bit multiplier for signal <stepX[15]_colCount[9]_MuLt_24_OUT> created at line 130.
+    Found 16x9-bit multiplier for signal <stepY[15]_rowCount[8]_MuLt_26_OUT> created at line 132.
+    Found 9x10-bit multiplier for signal <n0416> created at line 139.
     Summary:
 	inferred   3 Multiplier(s).
 	inferred   6 Adder/Subtractor(s).
-	inferred 138 D-type flip-flop(s).
+	inferred 126 D-type flip-flop(s).
 Unit <fractal> synthesized.
 
 Synthesizing Unit <diverge_pipe>.
@@ -367,15 +371,15 @@ Synthesizing Unit <vga_sync>.
     Found 1-bit register for signal <h_sync_reg>.
     Found 1-bit register for signal <v_sync_reg>.
     Found 2-bit register for signal <mod4_reg>.
-    Found 2-bit adder for signal <mod4_next> created at line 78.
-    Found 10-bit adder for signal <h_count_reg[9]_GND_7_o_add_7_OUT> created at line 91.
-    Found 10-bit adder for signal <v_count_reg[9]_GND_7_o_add_11_OUT> created at line 103.
-    Found 10-bit comparator lessequal for signal <n0017> created at line 108
-    Found 10-bit comparator lessequal for signal <n0019> created at line 108
-    Found 10-bit comparator lessequal for signal <n0022> created at line 109
-    Found 10-bit comparator lessequal for signal <n0024> created at line 109
-    Found 10-bit comparator greater for signal <h_count_reg[9]_PWR_8_o_LessThan_19_o> created at line 112
-    Found 10-bit comparator greater for signal <v_count_reg[9]_GND_7_o_LessThan_20_o> created at line 112
+    Found 2-bit adder for signal <mod4_next> created at line 81.
+    Found 10-bit adder for signal <h_count_reg[9]_GND_10_o_add_10_OUT> created at line 94.
+    Found 10-bit adder for signal <v_count_reg[9]_GND_10_o_add_14_OUT> created at line 106.
+    Found 10-bit comparator lessequal for signal <n0024> created at line 111
+    Found 10-bit comparator lessequal for signal <n0026> created at line 111
+    Found 10-bit comparator lessequal for signal <n0029> created at line 112
+    Found 10-bit comparator lessequal for signal <n0031> created at line 112
+    Found 10-bit comparator greater for signal <h_count_reg[9]_PWR_8_o_LessThan_22_o> created at line 115
+    Found 10-bit comparator greater for signal <v_count_reg[9]_GND_10_o_LessThan_23_o> created at line 115
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  24 D-type flip-flop(s).
@@ -392,7 +396,6 @@ WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and l
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred   1 Multiplexer(s).
 Unit <pixel_gen> synthesized.
 
 =========================================================================
@@ -435,8 +438,7 @@ Macro Statistics
  10-bit comparator greater                             : 2
  10-bit comparator lessequal                           : 4
  33-bit comparator greater                             : 62
-# Multiplexers                                         : 373
- 12-bit 2-to-1 multiplexer                             : 1
+# Multiplexers                                         : 372
  16-bit 2-to-1 multiplexer                             : 248
  8-bit 2-to-1 multiplexer                              : 124
 
@@ -449,6 +451,18 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 
 Reading core <ipcore_dir/bram.ngc>.
 Loading core <bram> for timing and area information for instance <mem>.
+WARNING:Xst:1710 - FF/Latch <color_0> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <color_1> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <color_2> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <color_3> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <color_4> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <color_5> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <color_6> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <color_7> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <color_8> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <color_9> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <color_10> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <color_11> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <newY_t_0> of sequential type is unconnected in block <gen_loop[0].div_pipe_instance>.
 WARNING:Xst:2677 - Node <newY_t_1> of sequential type is unconnected in block <gen_loop[0].div_pipe_instance>.
 WARNING:Xst:2677 - Node <newY_t_2> of sequential type is unconnected in block <gen_loop[0].div_pipe_instance>.
@@ -1537,11 +1551,11 @@ Synthesizing (advanced) Unit <fractal>.
 The following registers are absorbed into counter <colCount>: 1 register on signal <colCount>.
 The following registers are absorbed into counter <ClkCount>: 1 register on signal <ClkCount>.
 The following registers are absorbed into counter <rowCount>: 1 register on signal <rowCount>.
-	Multiplier <Mmult_stepY[15]_rowCount[8]_MuLt_31_OUT> in block <fractal> and adder/subtractor <Madd_startY[15]_yRegTemp[15]_add_32_OUT> in block <fractal> are combined into a MAC<Maddsub_stepY[15]_rowCount[8]_MuLt_31_OUT>.
-	The following registers are also absorbed by the MAC: <yRegTemp> in block <fractal>, <yReg1> in block <fractal>.
-	Multiplier <Mmult_stepX[15]_colCount[9]_MuLt_29_OUT> in block <fractal> and adder/subtractor <Madd_startX[15]_xRegTemp[15]_add_30_OUT> in block <fractal> are combined into a MAC<Maddsub_stepX[15]_colCount[9]_MuLt_29_OUT>.
+	Multiplier <Mmult_stepX[15]_colCount[9]_MuLt_24_OUT> in block <fractal> and adder/subtractor <Madd_startX[15]_xRegTemp[15]_add_25_OUT> in block <fractal> are combined into a MAC<Maddsub_stepX[15]_colCount[9]_MuLt_24_OUT>.
 	The following registers are also absorbed by the MAC: <xRegTemp> in block <fractal>, <xReg1> in block <fractal>.
-	Multiplier <Mmult_n0427> in block <fractal> and adder/subtractor <Madd_rowCount[8]_GND_2_o_add_34_OUT> in block <fractal> are combined into a MAC<Maddsub_n0427>.
+	Multiplier <Mmult_stepY[15]_rowCount[8]_MuLt_26_OUT> in block <fractal> and adder/subtractor <Madd_startY[15]_yRegTemp[15]_add_27_OUT> in block <fractal> are combined into a MAC<Maddsub_stepY[15]_rowCount[8]_MuLt_26_OUT>.
+	The following registers are also absorbed by the MAC: <yRegTemp> in block <fractal>, <yReg1> in block <fractal>.
+	Multiplier <Mmult_n0416> in block <fractal> and adder/subtractor <Madd_rowCount[8]_GND_2_o_add_29_OUT> in block <fractal> are combined into a MAC<Maddsub_n0416>.
 	The following registers are also absorbed by the MAC: <currAddr> in block <fractal>.
 Unit <fractal> synthesized (advanced).
 
@@ -1609,11 +1623,8 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <sum_32> in Unit <diverge_pipe> is equivalent to the following FF/Latch, which will be removed : <sum_33> 
-INFO:Xst:2261 - The FF/Latch <color_0> in Unit <fractal> is equivalent to the following 4 FFs/Latches, which will be removed : <color_1> <color_6> <color_9> <color_10> 
-INFO:Xst:2261 - The FF/Latch <color_2> in Unit <fractal> is equivalent to the following FF/Latch, which will be removed : <color_4> 
-INFO:Xst:2261 - The FF/Latch <color_3> in Unit <fractal> is equivalent to the following 2 FFs/Latches, which will be removed : <color_5> <color_11> 
-INFO:Xst:2261 - The FF/Latch <color_7> in Unit <fractal> is equivalent to the following FF/Latch, which will be removed : <color_8> 
-WARNING:Xst:1710 - FF/Latch <color_7> (without init value) has a constant value of 0 in block <fractal>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <color_0> in Unit <top_level> is equivalent to the following 11 FFs/Latches, which will be removed : <color_1> <color_2> <color_3> <color_4> <color_5> <color_6> <color_7> <color_8> <color_9> <color_10> <color_11> 
+WARNING:Xst:1710 - FF/Latch <color_0> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <top_level> ...
 
@@ -3790,9 +3801,8 @@ WARNING:Xst:2677 - Node <sum_30> of sequential type is unconnected in block <gen
 WARNING:Xst:2677 - Node <sum_31> of sequential type is unconnected in block <gen_loop[0].div_pipe_instance>.
 WARNING:Xst:2677 - Node <sum_32> of sequential type is unconnected in block <gen_loop[0].div_pipe_instance>.
 WARNING:Xst:2677 - Node <newDiv_7> of sequential type is unconnected in block <gen_loop[0].div_pipe_instance>.
-WARNING:Xst:2677 - Node <vga_sync_unit/v_sync_reg> of sequential type is unconnected in block <frac>.
-WARNING:Xst:2677 - Node <vga_sync_unit/h_sync_reg> of sequential type is unconnected in block <frac>.
-INFO:Xst:2261 - The FF/Latch <ClkCount_0> in Unit <frac> is equivalent to the following FF/Latch, which will be removed : <vga_sync_unit/mod4_reg_0> 
+WARNING:Xst:2677 - Node <vga_sync_unit/v_sync_reg> of sequential type is unconnected in block <top_level>.
+WARNING:Xst:2677 - Node <vga_sync_unit/h_sync_reg> of sequential type is unconnected in block <top_level>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -4052,8 +4062,8 @@ Unit <gen_loop[9].div_pipe_instance> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 5370
- Flip-Flops                                            : 5370
+# Registers                                            : 5368
+ Flip-Flops                                            : 5368
 # Shift Registers                                      : 62
  2-bit shift register                                  : 62
 
@@ -4078,26 +4088,25 @@ Top Level Output File Name         : top_level.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 98288
-#      GND                         : 64
-#      INV                         : 2735
+# BELS                             : 98287
+#      GND                         : 65
+#      INV                         : 2736
 #      LUT1                        : 1415
-#      LUT2                        : 23277
-#      LUT3                        : 3859
-#      LUT4                        : 7668
-#      LUT5                        : 437
-#      LUT6                        : 396
+#      LUT2                        : 23275
+#      LUT3                        : 3857
+#      LUT4                        : 7669
+#      LUT5                        : 439
+#      LUT6                        : 393
 #      MUXCY                       : 29273
 #      MUXF7                       : 7
-#      VCC                         : 64
+#      VCC                         : 65
 #      XORCY                       : 29093
-# FlipFlops/Latches                : 5439
-#      FD                          : 5212
-#      FDE                         : 123
+# FlipFlops/Latches                : 5437
+#      FD                          : 5211
+#      FDE                         : 122
 #      FDR                         : 3
 #      FDRE                        : 39
-#      FDS                         : 61
-#      FDSE                        : 1
+#      FDS                         : 62
 # RAMS                             : 68
 #      RAMB18E1                    : 4
 #      RAMB36E1                    : 64
@@ -4117,18 +4126,18 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            5439  out of  126800     4%  
- Number of Slice LUTs:                39849  out of  63400    62%  
-    Number used as Logic:             39787  out of  63400    62%  
+ Number of Slice Registers:            5437  out of  126800     4%  
+ Number of Slice LUTs:                39846  out of  63400    62%  
+    Number used as Logic:             39784  out of  63400    62%  
     Number used as Memory:               62  out of  19000     0%  
        Number used as SRL:               62
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  43908
-   Number with an unused Flip Flop:   38469  out of  43908    87%  
-   Number with an unused LUT:          4059  out of  43908     9%  
-   Number of fully used LUT-FF pairs:  1380  out of  43908     3%  
-   Number of unique control sets:       195
+ Number of LUT Flip Flop pairs used:  43905
+   Number with an unused Flip Flop:   38468  out of  43905    87%  
+   Number with an unused LUT:          4059  out of  43905     9%  
+   Number of fully used LUT-FF pairs:  1378  out of  43905     3%  
+   Number of unique control sets:       194
 
 IO Utilization: 
  Number of IOs:                          15
@@ -4161,72 +4170,72 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Clk_100M                           | BUFGP                  | 5695  |
+Clk_100M                           | BUFGP                  | 5693  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-Control Signal                                                                                                                                                                                                                                                                                        | Buffer(FF name)                                                                                                                                              | Load  |
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_1212(frac/bitmap/mem/XST_GND:G)                                                                                                                                                           | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram)    | 72    |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/cascadelata_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/cascadelatb_tmp(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(frac/bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                              | Buffer(FF name)                                                                                                                                         | Load  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/Mmux_dout_mux_1212(bitmap/mem/XST_GND:G)                                                                                                                                                           | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram)    | 72    |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)| 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/cascadelata_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/cascadelatb_tmp(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) | 1     |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
@@ -4234,7 +4243,7 @@ Speed Grade: -3
 
    Minimum period: 8.459ns (Maximum Frequency: 118.213MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 0.659ns
+   Maximum output required time after clock: No path found
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -4244,7 +4253,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk_100M'
   Clock period: 8.459ns (frequency: 118.213MHz)
-  Total number of paths / destination ports: 14839598965 / 14771
+  Total number of paths / destination ports: 14839598947 / 14767
 -------------------------------------------------------------------------
 Delay:               8.459ns (Levels of Logic = 31)
   Source:            frac/gen_loop[60].div_pipe_instance/newY_0 (FF)
@@ -4294,26 +4303,6 @@ Delay:               8.459ns (Levels of Logic = 31)
                                        (71.6% logic, 28.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_100M'
-  Total number of paths / destination ports: 10 / 10
--------------------------------------------------------------------------
-Offset:              0.659ns (Levels of Logic = 2)
-  Source:            frac/color_0 (FF)
-  Destination:       COLOUR_OUT<10> (PAD)
-  Source Clock:      Clk_100M rising
-
-  Data Path: frac/color_0 to COLOUR_OUT<10>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q              5   0.361   0.298  color_0 (color_0)
-     end scope: 'frac:COLOUR_OUT<10>'
-     OBUF:I->O                 0.000          COLOUR_OUT_10_OBUF (COLOUR_OUT<10>)
-    ----------------------------------------
-    Total                      0.659ns (0.361ns logic, 0.298ns route)
-                                       (54.8% logic, 45.2% route)
-
-=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
@@ -4329,15 +4318,15 @@ Clk_100M       |    8.459|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 96.00 secs
-Total CPU time to Xst completion: 80.64 secs
+Total REAL time to Xst completion: 71.00 secs
+Total CPU time to Xst completion: 68.94 secs
  
 --> 
 
 
-Total memory usage is 773216 kilobytes
+Total memory usage is 773400 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 3342 (   0 filtered)
-Number of infos    :   81 (   0 filtered)
+Number of warnings : 3359 (   0 filtered)
+Number of infos    :   76 (   0 filtered)
 

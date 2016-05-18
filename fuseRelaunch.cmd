@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/bluelabuser/Desktop/Temp/fractal/fractal_isim_beh.exe" -prj "/home/bluelabuser/Desktop/Temp/fractal/fractal_beh.prj" "work.fractal" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/bluelabuser/Desktop/Temp/fractal/top_level_isim_beh.exe" -prj "/home/bluelabuser/Desktop/Temp/fractal/top_level_beh.prj" "work.top_level" "work.glbl" 
