@@ -5,13 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">stage</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="267" delta="unknown" >"/home/bluelabuser/Desktop/Temp/fractal/pipe_test.v" Line 47: Cannot find port <arg fmt="%s" index="1">sum</arg> on this module
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">stage</arg>&gt;. Formal port size is <arg fmt="%d" index="2">7</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"/home/bluelabuser/Desktop/Temp/fractal/pipe_test.v" Line 62: Module &lt;<arg fmt="%s" index="1">diverge_pipe</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">sum</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 56: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">divOut</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">7</arg>-bit.
+<msg type="error" file="Simulator" num="778" delta="unknown" >Static elaboration of top level Verilog design unit(s) in library <arg fmt="%s" index="1">work</arg> failed
 </msg>
 
 </messages>

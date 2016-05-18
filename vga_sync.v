@@ -20,7 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 module vga_sync(
 	input wire CLK_100MHz, reset,display,
-	output wire hsync, vsync, video_on, p_tick,
+	output wire  video_on, p_tick,
+	output reg hsync, vsync,
 	output wire [9:0] pixel_x, pixel_y
     );
 	
@@ -55,11 +56,15 @@ module vga_sync(
 		v_count_reg <=0;
 		h_sync_reg  <=1'b0;
 		v_sync_reg  <=1'b0;
+		h_sync_next <= 1'b1;
+		v_sync_next <= 1'b1;
 	end
 	
 	always@(posedge CLK_100MHz, posedge reset)
 		if(reset)
 			begin
+				h_sync_next <= 1'b1;
+				v_sync_next <= 1'b1;
 				mod4_reg <= 2'b0;
 				h_count_reg <=0;
 				v_count_reg <=0;
@@ -105,8 +110,19 @@ module vga_sync(
 			v_count_next = v_count_reg;
 			
 	//horizontal and vertcial syncs
-	assign h_sync_next = (h_count_reg >= (HD + HB) && h_count_reg <= (HD + HB + HR - 1));
-	assign v_sync_next = (v_count_reg >= (VD + VB) && v_count_reg <= (VD + VB + VR - 1));
+	//assign h_sync_next = ((h_count_reg == (HD + HB)) ? 1'b0:((h_count_reg == (HD + HB + HR +1)? 1'b1:1'b0)));
+	always @(*)
+		begin
+	if(h_count_reg == (HD + HB)) h_sync_next <= 1'b0;
+	else if (h_count_reg == (HD + HB + HR ))h_sync_next <= 1'b1;
+
+	if(v_count_reg == (VD + VB)) v_sync_next <= 1'b0;
+	else if (v_count_reg == (VD + VB + VR )) v_sync_next <= 1'b1;	
+	end
+	
+//	assign h_sync_next = (h_count_reg >= (HD + HB) && h_count_reg <= (HD + HB + HR - 1));
+	//assign v_sync_next = ((v_count_reg == (VD + VB)) ? 1'b0:((v_count_reg == (VD + VB + VR +1)? 1'b1:1'b0)));
+//	assign v_sync_next = (v_count_reg >= (VD + VB) && v_count_reg <= (VD + VB + VR - 1));
 	
 	//display active
 	assign video_on = (h_count_reg < HD) && (v_count_reg < VD);

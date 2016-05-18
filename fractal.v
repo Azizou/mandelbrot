@@ -82,7 +82,7 @@ assign	stage_x[0] = xReg1;
 assign	stage_y[0] = yReg1;
 assign	stage_c1[0] = xReg1;
 assign	stage_c2[0] = yReg1;
-assign stage_div[0] = 8'd100;
+assign stage_div[0] = 8'd63;
 assign stage_no_op[0] = 1'd0;
 
 assign addr_w = currAddr;

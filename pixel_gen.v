@@ -27,12 +27,16 @@ module pixel_gen(
    input wire [6:0] dina
 	);
 
+	
+
 	parameter width = 7;
 	parameter DATASIZE = 307200;
 
 	wire  [18:0] addr_r;
 	wire [width - 1:0] dout;
 	
+	
+
 	/** dout <=32 blue = 0, red = dout << 2, green = 32 - (dout << 2)
 	dout <= 64 red = 0;	*/
 
@@ -42,8 +46,14 @@ module pixel_gen(
 	reg [18:0]read_addr;
 	
 	wire [11:0] bitmap_color;
+	/**/
+	
+	reg [11:0] memory [63:0] ;
+	initial $readmemh("palette.hex", memory);
+	
+	/****/
 	assign addr_r = {10'b0,pixel_y[8:0]}*640 + {9'b0,pixel_x};//{pixel_y[8:0], pixel_x[9:0]};//19 bit address
-	assign bitmap_color = {5'b0,dout};//{{dout[1],3'b110}, {2'b01, dout[1:0]},{dout[1:0],2'b11}};
+	assign bitmap_color = memory[dout];//{5'b0,dout};//{{dout[1],3'b110}, {2'b01, dout[1:0]},{dout[1:0],2'b11}};
 
 	
 	//--------------------------------------------------

@@ -47,10 +47,10 @@ module top_level(
 	
 	
 	assign reset = 1'b0;
-	assign startX = 16'b1110000000000000;
-	assign startY = 16'b1110000000000000;
-	assign stepX  = 16'b0000000000011001;
-	assign stepY  = 16'b0000000000100010;
+	assign startX = 16'b1111000000000000;
+	assign startY = 16'b1111000000000000;
+	assign stepX  = 16'b0000000000000110;
+	assign stepY  = 16'b0000000000001000;
 	
 	fractal frac(.Clk_100M(Clk_100M),.reset(reset),.startX(startX),.startY(startY),
 	.stepX(stepX), .stepY(stepY),.divOut(divOut), .xTest(xTest), .yTest(yTest), .c1Test(c1Test),

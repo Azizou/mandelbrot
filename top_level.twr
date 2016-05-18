@@ -29,19 +29,19 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
 Timing constraint: NET "Clk_100M_BUFGP/IBUFG" PERIOD = 10 ns HIGH 5 ns;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 26603850192 paths analyzed, 31274 endpoints analyzed, 0 failing endpoints
+ 26469509134 paths analyzed, 30246 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
  Minimum period is   9.992ns.
 --------------------------------------------------------------------------------
 
-Paths for end point frac/gen_loop[40].div_pipe_instance/newY_t_32 (SLICE_X8Y91.CIN), 60039672 paths
+Paths for end point frac/gen_loop[13].div_pipe_instance/newY_t_32 (SLICE_X39Y44.CIN), 60039672 paths
 --------------------------------------------------------------------------------
 Slack (setup path):     0.008ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               frac/gen_loop[39].div_pipe_instance/newX_1 (FF)
-  Destination:          frac/gen_loop[40].div_pipe_instance/newY_t_32 (FF)
+  Source:               frac/gen_loop[12].div_pipe_instance/newX_2 (FF)
+  Destination:          frac/gen_loop[13].div_pipe_instance/newY_t_32 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      9.874ns (Levels of Logic = 11)
-  Clock Path Skew:      -0.083ns (1.155 - 1.238)
+  Data Path Delay:      9.996ns (Levels of Logic = 10)
+  Clock Path Skew:      0.039ns (1.153 - 1.114)
   Source Clock:         Clk_100M_BUFGP rising at 0.000ns
   Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -52,63 +52,60 @@ Slack (setup path):     0.008ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: frac/gen_loop[39].div_pipe_instance/newX_1 to frac/gen_loop[40].div_pipe_instance/newY_t_32
+  Maximum Data Path at Slow Process Corner: frac/gen_loop[12].div_pipe_instance/newX_2 to frac/gen_loop[13].div_pipe_instance/newY_t_32
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X11Y103.AQ     Tcko                  0.341   frac/stage_x<40><7>
-                                                       frac/gen_loop[39].div_pipe_instance/newX_1
-    SLICE_X2Y80.B1       net (fanout=19)       1.582   frac/stage_x<40><1>
-    SLICE_X2Y80.COUT     Topcyb                0.499   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_lut<4>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X2Y81.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X2Y81.BMUX     Tcinb                 0.342   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-    SLICE_X3Y84.A1       net (fanout=1)        0.699   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_119
-    SLICE_X3Y84.DMUX     Topad                 0.686   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_lut<8>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-    SLICE_X2Y86.B2       net (fanout=1)        0.596   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_149
-    SLICE_X2Y86.COUT     Topcyb                0.499   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_lut<11>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-    SLICE_X2Y87.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-    SLICE_X2Y87.BMUX     Tcinb                 0.342   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-    SLICE_X7Y90.B2       net (fanout=2)        0.807   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_1812
-    SLICE_X7Y90.COUT     Topcyb                0.509   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_lut<18>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-    SLICE_X7Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-    SLICE_X7Y91.AMUX     Tcina                 0.286   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-    SLICE_X6Y90.A2       net (fanout=2)        0.701   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_2118
-    SLICE_X6Y90.COUT     Topcya                0.476   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_lut<21>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-    SLICE_X6Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-    SLICE_X6Y91.AMUX     Tcina                 0.269   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-    SLICE_X8Y90.C2       net (fanout=2)        0.771   frac/gen_loop[40].div_pipe_instance/n0061<25>
-    SLICE_X8Y90.COUT     Topcyc                0.383   frac/gen_loop[40].div_pipe_instance/newY_t<29>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_lut<27>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_cy<28>
-    SLICE_X8Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_cy<28>
-    SLICE_X8Y91.CLK      Tcinck                0.086   frac/gen_loop[40].div_pipe_instance/newY_t<32>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_xor<31>
-                                                       frac/gen_loop[40].div_pipe_instance/newY_t_32
+    SLICE_X56Y72.AMUX    Tshcko                0.463   frac/stage_x<13><7>
+                                                       frac/gen_loop[12].div_pipe_instance/newX_2
+    SLICE_X27Y43.B5      net (fanout=19)       1.930   frac/stage_x<13><2>
+    SLICE_X27Y43.CMUX    Topbc                 0.662   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd5_lut<4>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
+    SLICE_X31Y43.B6      net (fanout=1)        0.418   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd_85
+    SLICE_X31Y43.DMUX    Topbd                 0.711   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd9_cy<7>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd9_lut<5>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd9_cy<7>
+    SLICE_X33Y43.B1      net (fanout=1)        0.587   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd_109
+    SLICE_X33Y43.COUT    Topcyb                0.509   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<9>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_lut<7>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<9>
+    SLICE_X33Y44.CIN     net (fanout=1)        0.000   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<9>
+    SLICE_X33Y44.BMUX    Tcinb                 0.358   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
+    SLICE_X36Y41.B1      net (fanout=2)        0.746   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd_1412
+    SLICE_X36Y41.COUT    Topcyb                0.509   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<16>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_lut<14>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<16>
+    SLICE_X36Y42.CIN     net (fanout=1)        0.000   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<16>
+    SLICE_X36Y42.BMUX    Tcinb                 0.358   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
+    SLICE_X37Y42.B2      net (fanout=2)        0.618   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd_1814
+    SLICE_X37Y42.COUT    Topcyb                0.509   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<20>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_lut<18>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<20>
+    SLICE_X37Y43.CIN     net (fanout=1)        0.000   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<20>
+    SLICE_X37Y43.DMUX    Tcind                 0.371   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
+    SLICE_X39Y43.B1      net (fanout=2)        0.614   frac/gen_loop[13].div_pipe_instance/n0061<24>
+    SLICE_X39Y43.COUT    Topcyb                0.509   frac/gen_loop[13].div_pipe_instance/newY_t<29>
+                                                       frac/gen_loop[13].div_pipe_instance/Madd_n0069_Madd_lut<26>
+                                                       frac/gen_loop[13].div_pipe_instance/Madd_n0069_Madd_cy<28>
+    SLICE_X39Y44.CIN     net (fanout=1)        0.000   frac/gen_loop[13].div_pipe_instance/Madd_n0069_Madd_cy<28>
+    SLICE_X39Y44.CLK     Tcinck                0.124   frac/gen_loop[13].div_pipe_instance/newY_t<32>
+                                                       frac/gen_loop[13].div_pipe_instance/Madd_n0069_Madd_xor<31>
+                                                       frac/gen_loop[13].div_pipe_instance/newY_t_32
     -------------------------------------------------  ---------------------------
-    Total                                      9.874ns (4.718ns logic, 5.156ns route)
-                                                       (47.8% logic, 52.2% route)
+    Total                                      9.996ns (5.083ns logic, 4.913ns route)
+                                                       (50.9% logic, 49.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.015ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               frac/gen_loop[39].div_pipe_instance/newX_1 (FF)
-  Destination:          frac/gen_loop[40].div_pipe_instance/newY_t_32 (FF)
+Slack (setup path):     0.025ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               frac/gen_loop[12].div_pipe_instance/newX_2 (FF)
+  Destination:          frac/gen_loop[13].div_pipe_instance/newY_t_32 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      9.867ns (Levels of Logic = 11)
-  Clock Path Skew:      -0.083ns (1.155 - 1.238)
+  Data Path Delay:      9.979ns (Levels of Logic = 10)
+  Clock Path Skew:      0.039ns (1.153 - 1.114)
   Source Clock:         Clk_100M_BUFGP rising at 0.000ns
   Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -119,63 +116,60 @@ Slack (setup path):     0.015ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: frac/gen_loop[39].div_pipe_instance/newX_1 to frac/gen_loop[40].div_pipe_instance/newY_t_32
+  Maximum Data Path at Slow Process Corner: frac/gen_loop[12].div_pipe_instance/newX_2 to frac/gen_loop[13].div_pipe_instance/newY_t_32
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X11Y103.AQ     Tcko                  0.341   frac/stage_x<40><7>
-                                                       frac/gen_loop[39].div_pipe_instance/newX_1
-    SLICE_X2Y80.B1       net (fanout=19)       1.582   frac/stage_x<40><1>
-    SLICE_X2Y80.COUT     Topcyb                0.499   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_lut<4>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X2Y81.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X2Y81.BMUX     Tcinb                 0.342   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-    SLICE_X3Y84.A1       net (fanout=1)        0.699   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_119
-    SLICE_X3Y84.DMUX     Topad                 0.686   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_lut<8>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-    SLICE_X2Y86.B2       net (fanout=1)        0.596   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_149
-    SLICE_X2Y86.COUT     Topcyb                0.499   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_lut<11>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-    SLICE_X2Y87.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-    SLICE_X2Y87.BMUX     Tcinb                 0.342   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-    SLICE_X7Y90.B2       net (fanout=2)        0.807   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_1812
-    SLICE_X7Y90.COUT     Topcyb                0.509   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_lut<18>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-    SLICE_X7Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-    SLICE_X7Y91.BMUX     Tcinb                 0.358   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-    SLICE_X6Y90.B1       net (fanout=2)        0.599   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_2214
-    SLICE_X6Y90.COUT     Topcyb                0.499   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_lut<22>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-    SLICE_X6Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-    SLICE_X6Y91.AMUX     Tcina                 0.269   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-    SLICE_X8Y90.C2       net (fanout=2)        0.771   frac/gen_loop[40].div_pipe_instance/n0061<25>
-    SLICE_X8Y90.COUT     Topcyc                0.383   frac/gen_loop[40].div_pipe_instance/newY_t<29>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_lut<27>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_cy<28>
-    SLICE_X8Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_cy<28>
-    SLICE_X8Y91.CLK      Tcinck                0.086   frac/gen_loop[40].div_pipe_instance/newY_t<32>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_xor<31>
-                                                       frac/gen_loop[40].div_pipe_instance/newY_t_32
+    SLICE_X56Y72.AMUX    Tshcko                0.463   frac/stage_x<13><7>
+                                                       frac/gen_loop[12].div_pipe_instance/newX_2
+    SLICE_X27Y43.B5      net (fanout=19)       1.930   frac/stage_x<13><2>
+    SLICE_X27Y43.CMUX    Topbc                 0.662   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd5_lut<4>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
+    SLICE_X31Y43.B6      net (fanout=1)        0.418   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd_85
+    SLICE_X31Y43.DMUX    Topbd                 0.711   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd9_cy<7>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd9_lut<5>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd9_cy<7>
+    SLICE_X33Y43.B1      net (fanout=1)        0.587   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd_109
+    SLICE_X33Y43.COUT    Topcyb                0.509   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<9>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_lut<7>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<9>
+    SLICE_X33Y44.CIN     net (fanout=1)        0.000   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<9>
+    SLICE_X33Y44.AMUX    Tcina                 0.286   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
+    SLICE_X36Y41.A2      net (fanout=2)        0.818   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd_1312
+    SLICE_X36Y41.COUT    Topcya                0.492   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<16>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_lut<13>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<16>
+    SLICE_X36Y42.CIN     net (fanout=1)        0.000   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<16>
+    SLICE_X36Y42.BMUX    Tcinb                 0.358   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
+    SLICE_X37Y42.B2      net (fanout=2)        0.618   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd_1814
+    SLICE_X37Y42.COUT    Topcyb                0.509   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<20>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_lut<18>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<20>
+    SLICE_X37Y43.CIN     net (fanout=1)        0.000   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<20>
+    SLICE_X37Y43.DMUX    Tcind                 0.371   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
+    SLICE_X39Y43.B1      net (fanout=2)        0.614   frac/gen_loop[13].div_pipe_instance/n0061<24>
+    SLICE_X39Y43.COUT    Topcyb                0.509   frac/gen_loop[13].div_pipe_instance/newY_t<29>
+                                                       frac/gen_loop[13].div_pipe_instance/Madd_n0069_Madd_lut<26>
+                                                       frac/gen_loop[13].div_pipe_instance/Madd_n0069_Madd_cy<28>
+    SLICE_X39Y44.CIN     net (fanout=1)        0.000   frac/gen_loop[13].div_pipe_instance/Madd_n0069_Madd_cy<28>
+    SLICE_X39Y44.CLK     Tcinck                0.124   frac/gen_loop[13].div_pipe_instance/newY_t<32>
+                                                       frac/gen_loop[13].div_pipe_instance/Madd_n0069_Madd_xor<31>
+                                                       frac/gen_loop[13].div_pipe_instance/newY_t_32
     -------------------------------------------------  ---------------------------
-    Total                                      9.867ns (4.813ns logic, 5.054ns route)
-                                                       (48.8% logic, 51.2% route)
+    Total                                      9.979ns (4.994ns logic, 4.985ns route)
+                                                       (50.0% logic, 50.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.029ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               frac/gen_loop[39].div_pipe_instance/newX_2 (FF)
-  Destination:          frac/gen_loop[40].div_pipe_instance/newY_t_32 (FF)
+Slack (setup path):     0.058ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               frac/gen_loop[12].div_pipe_instance/newX_2 (FF)
+  Destination:          frac/gen_loop[13].div_pipe_instance/newY_t_32 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      9.853ns (Levels of Logic = 11)
-  Clock Path Skew:      -0.083ns (1.155 - 1.238)
+  Data Path Delay:      9.946ns (Levels of Logic = 10)
+  Clock Path Skew:      0.039ns (1.153 - 1.114)
   Source Clock:         Clk_100M_BUFGP rising at 0.000ns
   Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -186,130 +180,63 @@ Slack (setup path):     0.029ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: frac/gen_loop[39].div_pipe_instance/newX_2 to frac/gen_loop[40].div_pipe_instance/newY_t_32
+  Maximum Data Path at Slow Process Corner: frac/gen_loop[12].div_pipe_instance/newX_2 to frac/gen_loop[13].div_pipe_instance/newY_t_32
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X11Y103.AMUX   Tshcko                0.431   frac/stage_x<40><7>
-                                                       frac/gen_loop[39].div_pipe_instance/newX_2
-    SLICE_X2Y80.C2       net (fanout=19)       1.587   frac/stage_x<40><2>
-    SLICE_X2Y80.COUT     Topcyc                0.383   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_lut<5>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X2Y81.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X2Y81.BMUX     Tcinb                 0.342   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-    SLICE_X3Y84.A1       net (fanout=1)        0.699   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_119
-    SLICE_X3Y84.DMUX     Topad                 0.686   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_lut<8>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-    SLICE_X2Y86.B2       net (fanout=1)        0.596   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_149
-    SLICE_X2Y86.COUT     Topcyb                0.499   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_lut<11>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-    SLICE_X2Y87.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-    SLICE_X2Y87.BMUX     Tcinb                 0.342   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-    SLICE_X7Y90.B2       net (fanout=2)        0.807   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_1812
-    SLICE_X7Y90.COUT     Topcyb                0.509   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_lut<18>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-    SLICE_X7Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-    SLICE_X7Y91.AMUX     Tcina                 0.286   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-    SLICE_X6Y90.A2       net (fanout=2)        0.701   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_2118
-    SLICE_X6Y90.COUT     Topcya                0.476   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_lut<21>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-    SLICE_X6Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-    SLICE_X6Y91.AMUX     Tcina                 0.269   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-    SLICE_X8Y90.C2       net (fanout=2)        0.771   frac/gen_loop[40].div_pipe_instance/n0061<25>
-    SLICE_X8Y90.COUT     Topcyc                0.383   frac/gen_loop[40].div_pipe_instance/newY_t<29>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_lut<27>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_cy<28>
-    SLICE_X8Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_cy<28>
-    SLICE_X8Y91.CLK      Tcinck                0.086   frac/gen_loop[40].div_pipe_instance/newY_t<32>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_xor<31>
-                                                       frac/gen_loop[40].div_pipe_instance/newY_t_32
+    SLICE_X56Y72.AMUX    Tshcko                0.463   frac/stage_x<13><7>
+                                                       frac/gen_loop[12].div_pipe_instance/newX_2
+    SLICE_X27Y43.B5      net (fanout=19)       1.930   frac/stage_x<13><2>
+    SLICE_X27Y43.DMUX    Topbd                 0.711   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd5_lut<4>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
+    SLICE_X31Y43.C4      net (fanout=1)        0.529   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd_95
+    SLICE_X31Y43.DMUX    Topcd                 0.501   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd9_cy<7>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd9_lut<6>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd9_cy<7>
+    SLICE_X33Y43.B1      net (fanout=1)        0.587   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd_109
+    SLICE_X33Y43.COUT    Topcyb                0.509   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<9>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_lut<7>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<9>
+    SLICE_X33Y44.CIN     net (fanout=1)        0.000   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<9>
+    SLICE_X33Y44.BMUX    Tcinb                 0.358   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
+    SLICE_X36Y41.B1      net (fanout=2)        0.746   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd_1412
+    SLICE_X36Y41.COUT    Topcyb                0.509   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<16>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_lut<14>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<16>
+    SLICE_X36Y42.CIN     net (fanout=1)        0.000   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<16>
+    SLICE_X36Y42.BMUX    Tcinb                 0.358   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
+    SLICE_X37Y42.B2      net (fanout=2)        0.618   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd_1814
+    SLICE_X37Y42.COUT    Topcyb                0.509   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<20>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_lut<18>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<20>
+    SLICE_X37Y43.CIN     net (fanout=1)        0.000   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<20>
+    SLICE_X37Y43.DMUX    Tcind                 0.371   frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
+                                                       frac/gen_loop[13].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
+    SLICE_X39Y43.B1      net (fanout=2)        0.614   frac/gen_loop[13].div_pipe_instance/n0061<24>
+    SLICE_X39Y43.COUT    Topcyb                0.509   frac/gen_loop[13].div_pipe_instance/newY_t<29>
+                                                       frac/gen_loop[13].div_pipe_instance/Madd_n0069_Madd_lut<26>
+                                                       frac/gen_loop[13].div_pipe_instance/Madd_n0069_Madd_cy<28>
+    SLICE_X39Y44.CIN     net (fanout=1)        0.000   frac/gen_loop[13].div_pipe_instance/Madd_n0069_Madd_cy<28>
+    SLICE_X39Y44.CLK     Tcinck                0.124   frac/gen_loop[13].div_pipe_instance/newY_t<32>
+                                                       frac/gen_loop[13].div_pipe_instance/Madd_n0069_Madd_xor<31>
+                                                       frac/gen_loop[13].div_pipe_instance/newY_t_32
     -------------------------------------------------  ---------------------------
-    Total                                      9.853ns (4.692ns logic, 5.161ns route)
-                                                       (47.6% logic, 52.4% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point frac/gen_loop[56].div_pipe_instance/newY_t_32 (SLICE_X29Y196.A3), 9097034 paths
---------------------------------------------------------------------------------
-Slack (setup path):     0.022ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               frac/gen_loop[55].div_pipe_instance/newX_0 (FF)
-  Destination:          frac/gen_loop[56].div_pipe_instance/newY_t_32 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      9.857ns (Levels of Logic = 10)
-  Clock Path Skew:      -0.086ns (1.024 - 1.110)
-  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
-  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: frac/gen_loop[55].div_pipe_instance/newX_0 to frac/gen_loop[56].div_pipe_instance/newY_t_32
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X57Y198.DMUX   Tshcko                0.429   frac/stage_x<56><7>
-                                                       frac/gen_loop[55].div_pipe_instance/newX_0
-    SLICE_X28Y194.A1     net (fanout=18)       1.680   frac/stage_x<56><0>
-    SLICE_X28Y194.COUT   Topcya                0.492   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd4_cy<6>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd4_lut<3>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd4_cy<6>
-    SLICE_X28Y195.CIN    net (fanout=1)        0.000   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd4_cy<6>
-    SLICE_X28Y195.BMUX   Tcinb                 0.358   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd4_cy<10>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd4_cy<10>
-    SLICE_X24Y195.C2     net (fanout=2)        0.715   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd_134
-    SLICE_X24Y195.COUT   Topcyc                0.398   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_lut<10>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-    SLICE_X24Y196.CIN    net (fanout=1)        0.000   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-    SLICE_X24Y196.DMUX   Tcind                 0.371   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<15>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<15>
-    SLICE_X27Y196.B1     net (fanout=1)        0.589   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd_189
-    SLICE_X27Y196.COUT   Topcyb                0.509   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_lut<15>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-    SLICE_X27Y197.CIN    net (fanout=1)        0.000   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-    SLICE_X27Y197.BMUX   Tcinb                 0.358   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<21>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<21>
-    SLICE_X31Y195.B1     net (fanout=2)        0.828   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd_2212
-    SLICE_X31Y195.COUT   Topcyb                0.509   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_lut<22>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-    SLICE_X31Y196.CIN    net (fanout=1)        0.000   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-    SLICE_X31Y196.BMUX   Tcinb                 0.358   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<28>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<28>
-    SLICE_X30Y196.B2     net (fanout=2)        0.596   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd_269
-    SLICE_X30Y196.CMUX   Topbc                 0.649   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd15_lut<26>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-    SLICE_X29Y196.A3     net (fanout=2)        0.570   frac/gen_loop[56].div_pipe_instance/n0061<27>
-    SLICE_X29Y196.CLK    Tas                   0.448   frac/gen_loop[56].div_pipe_instance/newY_t<32>
-                                                       frac/gen_loop[56].div_pipe_instance/Madd_n0069_Madd_lut<29>
-                                                       frac/gen_loop[56].div_pipe_instance/Madd_n0069_Madd_xor<31>
-                                                       frac/gen_loop[56].div_pipe_instance/newY_t_32
-    -------------------------------------------------  ---------------------------
-    Total                                      9.857ns (4.879ns logic, 4.978ns route)
+    Total                                      9.946ns (4.922ns logic, 5.024ns route)
                                                        (49.5% logic, 50.5% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.030ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               frac/gen_loop[55].div_pipe_instance/newX_0 (FF)
-  Destination:          frac/gen_loop[56].div_pipe_instance/newY_t_32 (FF)
+
+Paths for end point bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B (RAMB36_X0Y16.ADDRBWRADDRL14), 155 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.013ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga_sync_unit/v_count_reg_7 (FF)
+  Destination:          bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B (RAM)
   Requirement:          10.000ns
-  Data Path Delay:      9.849ns (Levels of Logic = 10)
-  Clock Path Skew:      -0.086ns (1.024 - 1.110)
+  Data Path Delay:      9.931ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.021ns (1.184 - 1.205)
   Source Clock:         Clk_100M_BUFGP rising at 0.000ns
   Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -320,60 +247,42 @@ Slack (setup path):     0.030ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: frac/gen_loop[55].div_pipe_instance/newX_0 to frac/gen_loop[56].div_pipe_instance/newY_t_32
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X57Y198.DMUX   Tshcko                0.429   frac/stage_x<56><7>
-                                                       frac/gen_loop[55].div_pipe_instance/newX_0
-    SLICE_X28Y194.A1     net (fanout=18)       1.680   frac/stage_x<56><0>
-    SLICE_X28Y194.COUT   Topcya                0.492   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd4_cy<6>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd4_lut<3>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd4_cy<6>
-    SLICE_X28Y195.CIN    net (fanout=1)        0.000   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd4_cy<6>
-    SLICE_X28Y195.CMUX   Tcinc                 0.314   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd4_cy<10>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd4_cy<10>
-    SLICE_X24Y195.D1     net (fanout=2)        0.753   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd_144
-    SLICE_X24Y195.COUT   Topcyd                0.396   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_lut<11>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-    SLICE_X24Y196.CIN    net (fanout=1)        0.000   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-    SLICE_X24Y196.DMUX   Tcind                 0.371   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<15>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<15>
-    SLICE_X27Y196.B1     net (fanout=1)        0.589   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd_189
-    SLICE_X27Y196.COUT   Topcyb                0.509   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_lut<15>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-    SLICE_X27Y197.CIN    net (fanout=1)        0.000   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-    SLICE_X27Y197.BMUX   Tcinb                 0.358   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<21>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<21>
-    SLICE_X31Y195.B1     net (fanout=2)        0.828   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd_2212
-    SLICE_X31Y195.COUT   Topcyb                0.509   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_lut<22>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-    SLICE_X31Y196.CIN    net (fanout=1)        0.000   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-    SLICE_X31Y196.BMUX   Tcinb                 0.358   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<28>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<28>
-    SLICE_X30Y196.B2     net (fanout=2)        0.596   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd_269
-    SLICE_X30Y196.CMUX   Topbc                 0.649   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd15_lut<26>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-    SLICE_X29Y196.A3     net (fanout=2)        0.570   frac/gen_loop[56].div_pipe_instance/n0061<27>
-    SLICE_X29Y196.CLK    Tas                   0.448   frac/gen_loop[56].div_pipe_instance/newY_t<32>
-                                                       frac/gen_loop[56].div_pipe_instance/Madd_n0069_Madd_lut<29>
-                                                       frac/gen_loop[56].div_pipe_instance/Madd_n0069_Madd_xor<31>
-                                                       frac/gen_loop[56].div_pipe_instance/newY_t_32
-    -------------------------------------------------  ---------------------------
-    Total                                      9.849ns (4.833ns logic, 5.016ns route)
-                                                       (49.1% logic, 50.9% route)
+  Maximum Data Path at Slow Process Corner: vga_sync_unit/v_count_reg_7 to bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X61Y126.DQ            Tcko                  0.341   vga_sync_unit/v_count_reg<7>
+                                                              vga_sync_unit/v_count_reg_7
+    DSP48_X1Y50.A7              net (fanout=4)        0.424   vga_sync_unit/v_count_reg<7>
+    DSP48_X1Y50.P0              Tdspdo_A_P_MULT       2.823   bitmap/Maddsub_n0015
+                                                              bitmap/Maddsub_n0015
+    SLICE_X52Y126.A2            net (fanout=1)        0.828   bitmap/Maddsub_n0015_0
+    SLICE_X52Y126.COUT          Topcya                0.492   bitmap/Maddsub_n0015_Madd_cy<3>
+                                                              bitmap/Maddsub_n0015_Madd_lut<0>
+                                                              bitmap/Maddsub_n0015_Madd_cy<3>
+    SLICE_X52Y127.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<3>
+    SLICE_X52Y127.COUT          Tbyp                  0.089   bitmap/Maddsub_n0015_Madd_cy<7>
+                                                              bitmap/Maddsub_n0015_Madd_cy<7>
+    SLICE_X52Y128.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<7>
+    SLICE_X52Y128.COUT          Tbyp                  0.089   bitmap/Maddsub_n0015_Madd_cy<11>
+                                                              bitmap/Maddsub_n0015_Madd_cy<11>
+    SLICE_X52Y129.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<11>
+    SLICE_X52Y129.CMUX          Tcinc                 0.326   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe<3>
+                                                              bitmap/Maddsub_n0015_Madd_cy<15>
+    RAMB36_X0Y16.ADDRBWRADDRL14 net (fanout=110)      4.077   bitmap/addr_r<14>
+    RAMB36_X0Y16.CLKBWRCLKL     Trcck_ADDRB           0.442   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+                                                              bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+    --------------------------------------------------------  ---------------------------
+    Total                                             9.931ns (4.602ns logic, 5.329ns route)
+                                                              (46.3% logic, 53.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.064ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               frac/gen_loop[55].div_pipe_instance/newX_0 (FF)
-  Destination:          frac/gen_loop[56].div_pipe_instance/newY_t_32 (FF)
+Slack (setup path):     0.016ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga_sync_unit/v_count_reg_8 (FF)
+  Destination:          bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B (RAM)
   Requirement:          10.000ns
-  Data Path Delay:      9.815ns (Levels of Logic = 10)
-  Clock Path Skew:      -0.086ns (1.024 - 1.110)
+  Data Path Delay:      9.926ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.023ns (1.184 - 1.207)
   Source Clock:         Clk_100M_BUFGP rising at 0.000ns
   Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -384,63 +293,42 @@ Slack (setup path):     0.064ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: frac/gen_loop[55].div_pipe_instance/newX_0 to frac/gen_loop[56].div_pipe_instance/newY_t_32
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X57Y198.DMUX   Tshcko                0.429   frac/stage_x<56><7>
-                                                       frac/gen_loop[55].div_pipe_instance/newX_0
-    SLICE_X25Y195.A1     net (fanout=18)       1.665   frac/stage_x<56><0>
-    SLICE_X25Y195.COUT   Topcya                0.492   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd5_lut<3>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X25Y196.CIN    net (fanout=1)        0.000   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X25Y196.BMUX   Tcinb                 0.358   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-    SLICE_X24Y195.A1     net (fanout=1)        0.594   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd_119
-    SLICE_X24Y195.COUT   Topcya                0.492   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_lut<8>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-    SLICE_X24Y196.CIN    net (fanout=1)        0.000   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-    SLICE_X24Y196.DMUX   Tcind                 0.371   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<15>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd9_cy<15>
-    SLICE_X27Y196.B1     net (fanout=1)        0.589   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd_189
-    SLICE_X27Y196.COUT   Topcyb                0.509   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_lut<15>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-    SLICE_X27Y197.CIN    net (fanout=1)        0.000   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-    SLICE_X27Y197.BMUX   Tcinb                 0.358   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<21>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd12_cy<21>
-    SLICE_X31Y195.B1     net (fanout=2)        0.828   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd_2212
-    SLICE_X31Y195.COUT   Topcyb                0.509   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_lut<22>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-    SLICE_X31Y196.CIN    net (fanout=1)        0.000   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-    SLICE_X31Y196.BMUX   Tcinb                 0.358   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<28>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd14_cy<28>
-    SLICE_X30Y196.B2     net (fanout=2)        0.596   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd_269
-    SLICE_X30Y196.CMUX   Topbc                 0.649   frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd15_lut<26>
-                                                       frac/gen_loop[56].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-    SLICE_X29Y196.A3     net (fanout=2)        0.570   frac/gen_loop[56].div_pipe_instance/n0061<27>
-    SLICE_X29Y196.CLK    Tas                   0.448   frac/gen_loop[56].div_pipe_instance/newY_t<32>
-                                                       frac/gen_loop[56].div_pipe_instance/Madd_n0069_Madd_lut<29>
-                                                       frac/gen_loop[56].div_pipe_instance/Madd_n0069_Madd_xor<31>
-                                                       frac/gen_loop[56].div_pipe_instance/newY_t_32
-    -------------------------------------------------  ---------------------------
-    Total                                      9.815ns (4.973ns logic, 4.842ns route)
-                                                       (50.7% logic, 49.3% route)
+  Maximum Data Path at Slow Process Corner: vga_sync_unit/v_count_reg_8 to bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X61Y127.AQ            Tcko                  0.341   vga_sync_unit/v_count_reg<9>
+                                                              vga_sync_unit/v_count_reg_8
+    DSP48_X1Y50.A8              net (fanout=4)        0.419   vga_sync_unit/v_count_reg<8>
+    DSP48_X1Y50.P0              Tdspdo_A_P_MULT       2.823   bitmap/Maddsub_n0015
+                                                              bitmap/Maddsub_n0015
+    SLICE_X52Y126.A2            net (fanout=1)        0.828   bitmap/Maddsub_n0015_0
+    SLICE_X52Y126.COUT          Topcya                0.492   bitmap/Maddsub_n0015_Madd_cy<3>
+                                                              bitmap/Maddsub_n0015_Madd_lut<0>
+                                                              bitmap/Maddsub_n0015_Madd_cy<3>
+    SLICE_X52Y127.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<3>
+    SLICE_X52Y127.COUT          Tbyp                  0.089   bitmap/Maddsub_n0015_Madd_cy<7>
+                                                              bitmap/Maddsub_n0015_Madd_cy<7>
+    SLICE_X52Y128.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<7>
+    SLICE_X52Y128.COUT          Tbyp                  0.089   bitmap/Maddsub_n0015_Madd_cy<11>
+                                                              bitmap/Maddsub_n0015_Madd_cy<11>
+    SLICE_X52Y129.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<11>
+    SLICE_X52Y129.CMUX          Tcinc                 0.326   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe<3>
+                                                              bitmap/Maddsub_n0015_Madd_cy<15>
+    RAMB36_X0Y16.ADDRBWRADDRL14 net (fanout=110)      4.077   bitmap/addr_r<14>
+    RAMB36_X0Y16.CLKBWRCLKL     Trcck_ADDRB           0.442   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+                                                              bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+    --------------------------------------------------------  ---------------------------
+    Total                                             9.926ns (4.602ns logic, 5.324ns route)
+                                                              (46.4% logic, 53.6% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point frac/gen_loop[40].div_pipe_instance/newY_t_30 (SLICE_X8Y91.CIN), 60039672 paths
---------------------------------------------------------------------------------
-Slack (setup path):     0.031ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               frac/gen_loop[39].div_pipe_instance/newX_1 (FF)
-  Destination:          frac/gen_loop[40].div_pipe_instance/newY_t_30 (FF)
+Slack (setup path):     0.027ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga_sync_unit/v_count_reg_3 (FF)
+  Destination:          bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B (RAM)
   Requirement:          10.000ns
-  Data Path Delay:      9.851ns (Levels of Logic = 11)
-  Clock Path Skew:      -0.083ns (1.155 - 1.238)
+  Data Path Delay:      9.918ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.020ns (1.184 - 1.204)
   Source Clock:         Clk_100M_BUFGP rising at 0.000ns
   Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -451,63 +339,45 @@ Slack (setup path):     0.031ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: frac/gen_loop[39].div_pipe_instance/newX_1 to frac/gen_loop[40].div_pipe_instance/newY_t_30
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X11Y103.AQ     Tcko                  0.341   frac/stage_x<40><7>
-                                                       frac/gen_loop[39].div_pipe_instance/newX_1
-    SLICE_X2Y80.B1       net (fanout=19)       1.582   frac/stage_x<40><1>
-    SLICE_X2Y80.COUT     Topcyb                0.499   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_lut<4>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X2Y81.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X2Y81.BMUX     Tcinb                 0.342   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-    SLICE_X3Y84.A1       net (fanout=1)        0.699   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_119
-    SLICE_X3Y84.DMUX     Topad                 0.686   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_lut<8>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-    SLICE_X2Y86.B2       net (fanout=1)        0.596   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_149
-    SLICE_X2Y86.COUT     Topcyb                0.499   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_lut<11>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-    SLICE_X2Y87.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-    SLICE_X2Y87.BMUX     Tcinb                 0.342   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-    SLICE_X7Y90.B2       net (fanout=2)        0.807   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_1812
-    SLICE_X7Y90.COUT     Topcyb                0.509   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_lut<18>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-    SLICE_X7Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-    SLICE_X7Y91.AMUX     Tcina                 0.286   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-    SLICE_X6Y90.A2       net (fanout=2)        0.701   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_2118
-    SLICE_X6Y90.COUT     Topcya                0.476   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_lut<21>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-    SLICE_X6Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-    SLICE_X6Y91.AMUX     Tcina                 0.269   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-    SLICE_X8Y90.C2       net (fanout=2)        0.771   frac/gen_loop[40].div_pipe_instance/n0061<25>
-    SLICE_X8Y90.COUT     Topcyc                0.383   frac/gen_loop[40].div_pipe_instance/newY_t<29>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_lut<27>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_cy<28>
-    SLICE_X8Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_cy<28>
-    SLICE_X8Y91.CLK      Tcinck                0.063   frac/gen_loop[40].div_pipe_instance/newY_t<32>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_xor<31>
-                                                       frac/gen_loop[40].div_pipe_instance/newY_t_30
-    -------------------------------------------------  ---------------------------
-    Total                                      9.851ns (4.695ns logic, 5.156ns route)
-                                                       (47.7% logic, 52.3% route)
+  Maximum Data Path at Slow Process Corner: vga_sync_unit/v_count_reg_3 to bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X61Y125.DQ            Tcko                  0.341   vga_sync_unit/v_count_reg<3>
+                                                              vga_sync_unit/v_count_reg_3
+    DSP48_X1Y50.A3              net (fanout=4)        0.411   vga_sync_unit/v_count_reg<3>
+    DSP48_X1Y50.P0              Tdspdo_A_P_MULT       2.823   bitmap/Maddsub_n0015
+                                                              bitmap/Maddsub_n0015
+    SLICE_X52Y126.A2            net (fanout=1)        0.828   bitmap/Maddsub_n0015_0
+    SLICE_X52Y126.COUT          Topcya                0.492   bitmap/Maddsub_n0015_Madd_cy<3>
+                                                              bitmap/Maddsub_n0015_Madd_lut<0>
+                                                              bitmap/Maddsub_n0015_Madd_cy<3>
+    SLICE_X52Y127.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<3>
+    SLICE_X52Y127.COUT          Tbyp                  0.089   bitmap/Maddsub_n0015_Madd_cy<7>
+                                                              bitmap/Maddsub_n0015_Madd_cy<7>
+    SLICE_X52Y128.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<7>
+    SLICE_X52Y128.COUT          Tbyp                  0.089   bitmap/Maddsub_n0015_Madd_cy<11>
+                                                              bitmap/Maddsub_n0015_Madd_cy<11>
+    SLICE_X52Y129.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<11>
+    SLICE_X52Y129.CMUX          Tcinc                 0.326   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe<3>
+                                                              bitmap/Maddsub_n0015_Madd_cy<15>
+    RAMB36_X0Y16.ADDRBWRADDRL14 net (fanout=110)      4.077   bitmap/addr_r<14>
+    RAMB36_X0Y16.CLKBWRCLKL     Trcck_ADDRB           0.442   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+                                                              bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+    --------------------------------------------------------  ---------------------------
+    Total                                             9.918ns (4.602ns logic, 5.316ns route)
+                                                              (46.4% logic, 53.6% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.038ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               frac/gen_loop[39].div_pipe_instance/newX_1 (FF)
-  Destination:          frac/gen_loop[40].div_pipe_instance/newY_t_30 (FF)
+
+Paths for end point bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B (RAMB36_X0Y16.ADDRBWRADDRU14), 155 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.013ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga_sync_unit/v_count_reg_7 (FF)
+  Destination:          bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B (RAM)
   Requirement:          10.000ns
-  Data Path Delay:      9.844ns (Levels of Logic = 11)
-  Clock Path Skew:      -0.083ns (1.155 - 1.238)
+  Data Path Delay:      9.931ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.021ns (1.184 - 1.205)
   Source Clock:         Clk_100M_BUFGP rising at 0.000ns
   Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -518,63 +388,42 @@ Slack (setup path):     0.038ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: frac/gen_loop[39].div_pipe_instance/newX_1 to frac/gen_loop[40].div_pipe_instance/newY_t_30
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X11Y103.AQ     Tcko                  0.341   frac/stage_x<40><7>
-                                                       frac/gen_loop[39].div_pipe_instance/newX_1
-    SLICE_X2Y80.B1       net (fanout=19)       1.582   frac/stage_x<40><1>
-    SLICE_X2Y80.COUT     Topcyb                0.499   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_lut<4>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X2Y81.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X2Y81.BMUX     Tcinb                 0.342   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-    SLICE_X3Y84.A1       net (fanout=1)        0.699   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_119
-    SLICE_X3Y84.DMUX     Topad                 0.686   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_lut<8>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-    SLICE_X2Y86.B2       net (fanout=1)        0.596   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_149
-    SLICE_X2Y86.COUT     Topcyb                0.499   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_lut<11>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-    SLICE_X2Y87.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-    SLICE_X2Y87.BMUX     Tcinb                 0.342   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-    SLICE_X7Y90.B2       net (fanout=2)        0.807   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_1812
-    SLICE_X7Y90.COUT     Topcyb                0.509   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_lut<18>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-    SLICE_X7Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-    SLICE_X7Y91.BMUX     Tcinb                 0.358   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-    SLICE_X6Y90.B1       net (fanout=2)        0.599   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_2214
-    SLICE_X6Y90.COUT     Topcyb                0.499   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_lut<22>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-    SLICE_X6Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-    SLICE_X6Y91.AMUX     Tcina                 0.269   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-    SLICE_X8Y90.C2       net (fanout=2)        0.771   frac/gen_loop[40].div_pipe_instance/n0061<25>
-    SLICE_X8Y90.COUT     Topcyc                0.383   frac/gen_loop[40].div_pipe_instance/newY_t<29>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_lut<27>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_cy<28>
-    SLICE_X8Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_cy<28>
-    SLICE_X8Y91.CLK      Tcinck                0.063   frac/gen_loop[40].div_pipe_instance/newY_t<32>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_xor<31>
-                                                       frac/gen_loop[40].div_pipe_instance/newY_t_30
-    -------------------------------------------------  ---------------------------
-    Total                                      9.844ns (4.790ns logic, 5.054ns route)
-                                                       (48.7% logic, 51.3% route)
+  Maximum Data Path at Slow Process Corner: vga_sync_unit/v_count_reg_7 to bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X61Y126.DQ            Tcko                  0.341   vga_sync_unit/v_count_reg<7>
+                                                              vga_sync_unit/v_count_reg_7
+    DSP48_X1Y50.A7              net (fanout=4)        0.424   vga_sync_unit/v_count_reg<7>
+    DSP48_X1Y50.P0              Tdspdo_A_P_MULT       2.823   bitmap/Maddsub_n0015
+                                                              bitmap/Maddsub_n0015
+    SLICE_X52Y126.A2            net (fanout=1)        0.828   bitmap/Maddsub_n0015_0
+    SLICE_X52Y126.COUT          Topcya                0.492   bitmap/Maddsub_n0015_Madd_cy<3>
+                                                              bitmap/Maddsub_n0015_Madd_lut<0>
+                                                              bitmap/Maddsub_n0015_Madd_cy<3>
+    SLICE_X52Y127.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<3>
+    SLICE_X52Y127.COUT          Tbyp                  0.089   bitmap/Maddsub_n0015_Madd_cy<7>
+                                                              bitmap/Maddsub_n0015_Madd_cy<7>
+    SLICE_X52Y128.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<7>
+    SLICE_X52Y128.COUT          Tbyp                  0.089   bitmap/Maddsub_n0015_Madd_cy<11>
+                                                              bitmap/Maddsub_n0015_Madd_cy<11>
+    SLICE_X52Y129.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<11>
+    SLICE_X52Y129.CMUX          Tcinc                 0.326   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe<3>
+                                                              bitmap/Maddsub_n0015_Madd_cy<15>
+    RAMB36_X0Y16.ADDRBWRADDRU14 net (fanout=110)      4.077   bitmap/addr_r<14>
+    RAMB36_X0Y16.CLKBWRCLKU     Trcck_ADDRB           0.442   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+                                                              bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+    --------------------------------------------------------  ---------------------------
+    Total                                             9.931ns (4.602ns logic, 5.329ns route)
+                                                              (46.3% logic, 53.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.052ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               frac/gen_loop[39].div_pipe_instance/newX_2 (FF)
-  Destination:          frac/gen_loop[40].div_pipe_instance/newY_t_30 (FF)
+Slack (setup path):     0.016ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga_sync_unit/v_count_reg_8 (FF)
+  Destination:          bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B (RAM)
   Requirement:          10.000ns
-  Data Path Delay:      9.830ns (Levels of Logic = 11)
-  Clock Path Skew:      -0.083ns (1.155 - 1.238)
+  Data Path Delay:      9.926ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.023ns (1.184 - 1.207)
   Source Clock:         Clk_100M_BUFGP rising at 0.000ns
   Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -585,140 +434,165 @@ Slack (setup path):     0.052ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: frac/gen_loop[39].div_pipe_instance/newX_2 to frac/gen_loop[40].div_pipe_instance/newY_t_30
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X11Y103.AMUX   Tshcko                0.431   frac/stage_x<40><7>
-                                                       frac/gen_loop[39].div_pipe_instance/newX_2
-    SLICE_X2Y80.C2       net (fanout=19)       1.587   frac/stage_x<40><2>
-    SLICE_X2Y80.COUT     Topcyc                0.383   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_lut<5>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X2Y81.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<6>
-    SLICE_X2Y81.BMUX     Tcinb                 0.342   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd5_cy<10>
-    SLICE_X3Y84.A1       net (fanout=1)        0.699   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_119
-    SLICE_X3Y84.DMUX     Topad                 0.686   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_lut<8>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd9_cy<11>
-    SLICE_X2Y86.B2       net (fanout=1)        0.596   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_149
-    SLICE_X2Y86.COUT     Topcyb                0.499   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_lut<11>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-    SLICE_X2Y87.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<13>
-    SLICE_X2Y87.BMUX     Tcinb                 0.342   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd12_cy<17>
-    SLICE_X7Y90.B2       net (fanout=2)        0.807   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_1812
-    SLICE_X7Y90.COUT     Topcyb                0.509   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_lut<18>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-    SLICE_X7Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<20>
-    SLICE_X7Y91.AMUX     Tcina                 0.286   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd14_cy<24>
-    SLICE_X6Y90.A2       net (fanout=2)        0.701   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd_2118
-    SLICE_X6Y90.COUT     Topcya                0.476   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_lut<21>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-    SLICE_X6Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<24>
-    SLICE_X6Y91.AMUX     Tcina                 0.269   frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-                                                       frac/gen_loop[40].div_pipe_instance/Mmult_n0061_Madd15_cy<28>
-    SLICE_X8Y90.C2       net (fanout=2)        0.771   frac/gen_loop[40].div_pipe_instance/n0061<25>
-    SLICE_X8Y90.COUT     Topcyc                0.383   frac/gen_loop[40].div_pipe_instance/newY_t<29>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_lut<27>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_cy<28>
-    SLICE_X8Y91.CIN      net (fanout=1)        0.000   frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_cy<28>
-    SLICE_X8Y91.CLK      Tcinck                0.063   frac/gen_loop[40].div_pipe_instance/newY_t<32>
-                                                       frac/gen_loop[40].div_pipe_instance/Madd_n0069_Madd_xor<31>
-                                                       frac/gen_loop[40].div_pipe_instance/newY_t_30
-    -------------------------------------------------  ---------------------------
-    Total                                      9.830ns (4.669ns logic, 5.161ns route)
-                                                       (47.5% logic, 52.5% route)
+  Maximum Data Path at Slow Process Corner: vga_sync_unit/v_count_reg_8 to bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X61Y127.AQ            Tcko                  0.341   vga_sync_unit/v_count_reg<9>
+                                                              vga_sync_unit/v_count_reg_8
+    DSP48_X1Y50.A8              net (fanout=4)        0.419   vga_sync_unit/v_count_reg<8>
+    DSP48_X1Y50.P0              Tdspdo_A_P_MULT       2.823   bitmap/Maddsub_n0015
+                                                              bitmap/Maddsub_n0015
+    SLICE_X52Y126.A2            net (fanout=1)        0.828   bitmap/Maddsub_n0015_0
+    SLICE_X52Y126.COUT          Topcya                0.492   bitmap/Maddsub_n0015_Madd_cy<3>
+                                                              bitmap/Maddsub_n0015_Madd_lut<0>
+                                                              bitmap/Maddsub_n0015_Madd_cy<3>
+    SLICE_X52Y127.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<3>
+    SLICE_X52Y127.COUT          Tbyp                  0.089   bitmap/Maddsub_n0015_Madd_cy<7>
+                                                              bitmap/Maddsub_n0015_Madd_cy<7>
+    SLICE_X52Y128.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<7>
+    SLICE_X52Y128.COUT          Tbyp                  0.089   bitmap/Maddsub_n0015_Madd_cy<11>
+                                                              bitmap/Maddsub_n0015_Madd_cy<11>
+    SLICE_X52Y129.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<11>
+    SLICE_X52Y129.CMUX          Tcinc                 0.326   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe<3>
+                                                              bitmap/Maddsub_n0015_Madd_cy<15>
+    RAMB36_X0Y16.ADDRBWRADDRU14 net (fanout=110)      4.077   bitmap/addr_r<14>
+    RAMB36_X0Y16.CLKBWRCLKU     Trcck_ADDRB           0.442   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+                                                              bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+    --------------------------------------------------------  ---------------------------
+    Total                                             9.926ns (4.602ns logic, 5.324ns route)
+                                                              (46.4% logic, 53.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.027ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga_sync_unit/v_count_reg_3 (FF)
+  Destination:          bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B (RAM)
+  Requirement:          10.000ns
+  Data Path Delay:      9.918ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.020ns (1.184 - 1.204)
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: vga_sync_unit/v_count_reg_3 to bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X61Y125.DQ            Tcko                  0.341   vga_sync_unit/v_count_reg<3>
+                                                              vga_sync_unit/v_count_reg_3
+    DSP48_X1Y50.A3              net (fanout=4)        0.411   vga_sync_unit/v_count_reg<3>
+    DSP48_X1Y50.P0              Tdspdo_A_P_MULT       2.823   bitmap/Maddsub_n0015
+                                                              bitmap/Maddsub_n0015
+    SLICE_X52Y126.A2            net (fanout=1)        0.828   bitmap/Maddsub_n0015_0
+    SLICE_X52Y126.COUT          Topcya                0.492   bitmap/Maddsub_n0015_Madd_cy<3>
+                                                              bitmap/Maddsub_n0015_Madd_lut<0>
+                                                              bitmap/Maddsub_n0015_Madd_cy<3>
+    SLICE_X52Y127.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<3>
+    SLICE_X52Y127.COUT          Tbyp                  0.089   bitmap/Maddsub_n0015_Madd_cy<7>
+                                                              bitmap/Maddsub_n0015_Madd_cy<7>
+    SLICE_X52Y128.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<7>
+    SLICE_X52Y128.COUT          Tbyp                  0.089   bitmap/Maddsub_n0015_Madd_cy<11>
+                                                              bitmap/Maddsub_n0015_Madd_cy<11>
+    SLICE_X52Y129.CIN           net (fanout=1)        0.000   bitmap/Maddsub_n0015_Madd_cy<11>
+    SLICE_X52Y129.CMUX          Tcinc                 0.326   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe<3>
+                                                              bitmap/Maddsub_n0015_Madd_cy<15>
+    RAMB36_X0Y16.ADDRBWRADDRU14 net (fanout=110)      4.077   bitmap/addr_r<14>
+    RAMB36_X0Y16.CLKBWRCLKU     Trcck_ADDRB           0.442   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+                                                              bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B
+    --------------------------------------------------------  ---------------------------
+    Total                                             9.918ns (4.602ns logic, 5.316ns route)
+                                                              (46.4% logic, 53.6% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: NET "Clk_100M_BUFGP/IBUFG" PERIOD = 10 ns HIGH 5 ns;
 --------------------------------------------------------------------------------
 
-Paths for end point frac/gen_loop[34].div_pipe_instance/newC2_5 (SLICE_X27Y150.BX), 1 path
+Paths for end point bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAMB36_X1Y24.DIADI0), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.003ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               frac/gen_loop[33].div_pipe_instance/newC2_5 (FF)
-  Destination:          frac/gen_loop[34].div_pipe_instance/newC2_5 (FF)
+Slack (hold path):      0.002ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               frac/gen_loop[62].div_pipe_instance/newDiv_5 (FF)
+  Destination:          bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
   Requirement:          0.000ns
-  Data Path Delay:      0.358ns (Levels of Logic = 0)
-  Clock Path Skew:      0.355ns (0.871 - 0.516)
+  Data Path Delay:      0.301ns (Levels of Logic = 0)
+  Clock Path Skew:      0.299ns (0.798 - 0.499)
   Source Clock:         Clk_100M_BUFGP rising at 10.000ns
   Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: frac/gen_loop[33].div_pipe_instance/newC2_5 to frac/gen_loop[34].div_pipe_instance/newC2_5
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X31Y148.CMUX   Tshcko                0.181   frac/gen_loop[33].div_pipe_instance/newY_t<21>
-                                                       frac/gen_loop[33].div_pipe_instance/newC2_5
-    SLICE_X27Y150.BX     net (fanout=2)        0.243   frac/stage_c2<34><5>
-    SLICE_X27Y150.CLK    Tckdi       (-Th)     0.066   frac/stage_c2<35><7>
-                                                       frac/gen_loop[34].div_pipe_instance/newC2_5
-    -------------------------------------------------  ---------------------------
-    Total                                      0.358ns (0.115ns logic, 0.243ns route)
-                                                       (32.1% logic, 67.9% route)
+  Minimum Data Path at Fast Process Corner: frac/gen_loop[62].div_pipe_instance/newDiv_5 to bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X50Y122.BQ        Tcko                  0.164   n0011<5>
+                                                          frac/gen_loop[62].div_pipe_instance/newDiv_5
+    RAMB36_X1Y24.DIADI0     net (fanout=19)       0.433   n0011<5>
+    RAMB36_X1Y24.CLKARDCLKL Trckd_DIA   (-Th)     0.296   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                          bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    ----------------------------------------------------  ---------------------------
+    Total                                         0.301ns (-0.132ns logic, 0.433ns route)
+                                                          (-43.9% logic, 143.9% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point frac/gen_loop[13].div_pipe_instance/newDiv_5 (SLICE_X52Y20.A6), 1 path
+Paths for end point bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAMB36_X1Y24.DIADI1), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.004ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               frac/gen_loop[12].div_pipe_instance/newDiv_5 (FF)
-  Destination:          frac/gen_loop[13].div_pipe_instance/newDiv_5 (FF)
+Slack (hold path):      0.002ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               frac/gen_loop[62].div_pipe_instance/newDiv_5 (FF)
+  Destination:          bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
   Requirement:          0.000ns
-  Data Path Delay:      0.268ns (Levels of Logic = 1)
-  Clock Path Skew:      0.264ns (0.766 - 0.502)
+  Data Path Delay:      0.301ns (Levels of Logic = 0)
+  Clock Path Skew:      0.299ns (0.798 - 0.499)
   Source Clock:         Clk_100M_BUFGP rising at 10.000ns
   Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: frac/gen_loop[12].div_pipe_instance/newDiv_5 to frac/gen_loop[13].div_pipe_instance/newDiv_5
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X50Y21.AQ      Tcko                  0.164   frac/stage_div<13><6>
-                                                       frac/gen_loop[12].div_pipe_instance/newDiv_5
-    SLICE_X52Y20.A6      net (fanout=1)        0.150   frac/stage_div<13><5>
-    SLICE_X52Y20.CLK     Tah         (-Th)     0.046   frac/stage_div<14><6>
-                                                       frac/gen_loop[13].div_pipe_instance/div[7]_GND_3_o_mux_24_OUT<5>1
-                                                       frac/gen_loop[13].div_pipe_instance/newDiv_5
-    -------------------------------------------------  ---------------------------
-    Total                                      0.268ns (0.118ns logic, 0.150ns route)
-                                                       (44.0% logic, 56.0% route)
+  Minimum Data Path at Fast Process Corner: frac/gen_loop[62].div_pipe_instance/newDiv_5 to bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X50Y122.BQ        Tcko                  0.164   n0011<5>
+                                                          frac/gen_loop[62].div_pipe_instance/newDiv_5
+    RAMB36_X1Y24.DIADI1     net (fanout=19)       0.433   n0011<5>
+    RAMB36_X1Y24.CLKARDCLKU Trckd_DIA   (-Th)     0.296   bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                          bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    ----------------------------------------------------  ---------------------------
+    Total                                         0.301ns (-0.132ns logic, 0.433ns route)
+                                                          (-43.9% logic, 143.9% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point frac/gen_loop[6].div_pipe_instance/newC1_1 (SLICE_X12Y48.BX), 1 path
+Paths for end point frac/gen_loop[3].div_pipe_instance/newX_4 (SLICE_X13Y150.B5), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.009ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               frac/gen_loop[5].div_pipe_instance/newC1_1 (FF)
-  Destination:          frac/gen_loop[6].div_pipe_instance/newC1_1 (FF)
+Slack (hold path):      0.006ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               frac/gen_loop[3].div_pipe_instance/Maddsub_x_sqr (DSP)
+  Destination:          frac/gen_loop[3].div_pipe_instance/newX_4 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.345ns (Levels of Logic = 0)
-  Clock Path Skew:      0.336ns (0.860 - 0.524)
+  Data Path Delay:      0.282ns (Levels of Logic = 1)
+  Clock Path Skew:      0.276ns (0.872 - 0.596)
   Source Clock:         Clk_100M_BUFGP rising at 10.000ns
   Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: frac/gen_loop[5].div_pipe_instance/newC1_1 to frac/gen_loop[6].div_pipe_instance/newC1_1
+  Minimum Data Path at Fast Process Corner: frac/gen_loop[3].div_pipe_instance/Maddsub_x_sqr to frac/gen_loop[3].div_pipe_instance/newX_4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y52.CQ      Tcko                  0.141   frac/stage_c1<6><0>
-                                                       frac/gen_loop[5].div_pipe_instance/newC1_1
-    SLICE_X12Y48.BX      net (fanout=2)        0.256   frac/stage_c1<6><1>
-    SLICE_X12Y48.CLK     Tckdi       (-Th)     0.052   frac/stage_c1<7><3>
-                                                       frac/gen_loop[6].div_pipe_instance/newC1_1
+    DSP48_X0Y59.P16      Tdspcko_P_PREG        0.126   frac/gen_loop[3].div_pipe_instance/Maddsub_x_sqr
+                                                       frac/gen_loop[3].div_pipe_instance/Maddsub_x_sqr
+    SLICE_X13Y150.B5     net (fanout=1)        0.214   frac/gen_loop[3].div_pipe_instance/newX_t<4>
+    SLICE_X13Y150.CLK    Tah         (-Th)     0.058   frac/stage_x<4><7>
+                                                       frac/gen_loop[3].div_pipe_instance/newX_t[33]_newX_t[27]_wide_mux_18_OUT<16>1
+                                                       frac/gen_loop[3].div_pipe_instance/newX_4
     -------------------------------------------------  ---------------------------
-    Total                                      0.345ns (0.089ns logic, 0.256ns route)
-                                                       (25.8% logic, 74.2% route)
+    Total                                      0.282ns (0.068ns logic, 0.214ns route)
+                                                       (24.1% logic, 75.9% route)
 
 --------------------------------------------------------------------------------
 
@@ -729,7 +603,7 @@ Slack: 7.859ns (period - min period limit)
   Min period limit: 2.141ns (467.071MHz) (Trper_CLKA)
   Physical resource: bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T/CLKARDCLKL
   Logical resource: bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T/CLKARDCLKL
-  Location pin: RAMB36_X2Y26.CLKARDCLKL
+  Location pin: RAMB36_X3Y29.CLKARDCLKL
   Clock network: Clk_100M_BUFGP
 --------------------------------------------------------------------------------
 Slack: 7.859ns (period - min period limit)
@@ -737,7 +611,7 @@ Slack: 7.859ns (period - min period limit)
   Min period limit: 2.141ns (467.071MHz) (Trper_CLK_WF_NC(FMAX_CAS_WF_NC))
   Physical resource: bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T/CLKARDCLKU
   Logical resource: bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T/CLKARDCLKU
-  Location pin: RAMB36_X2Y26.CLKARDCLKU
+  Location pin: RAMB36_X3Y29.CLKARDCLKU
   Clock network: Clk_100M_BUFGP
 --------------------------------------------------------------------------------
 Slack: 7.859ns (period - min period limit)
@@ -745,7 +619,7 @@ Slack: 7.859ns (period - min period limit)
   Min period limit: 2.141ns (467.071MHz) (Trper_CLKB)
   Physical resource: bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T/CLKBWRCLKL
   Logical resource: bitmap/mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T/CLKBWRCLKL
-  Location pin: RAMB36_X2Y26.CLKBWRCLKL
+  Location pin: RAMB36_X3Y29.CLKBWRCLKL
   Clock network: Clk_100M_BUFGP
 --------------------------------------------------------------------------------
 
@@ -771,7 +645,7 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 26603850192 paths, 0 nets, and 139607 connections
+Constraints cover 26469509134 paths, 0 nets, and 137694 connections
 
 Design statistics:
    Minimum period:   9.992ns{1}   (Maximum frequency: 100.080MHz)
@@ -780,14 +654,14 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Wed May 18 13:17:51 2016 
+Analysis completed Wed May 18 16:07:04 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 1507 MB
+Peak Memory Usage: 1484 MB
 
 
 
