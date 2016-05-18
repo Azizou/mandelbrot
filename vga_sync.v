@@ -68,14 +68,11 @@ module vga_sync(
 			end
 		else
 			begin
-				if(display)
-				begin
-					mod4_reg <= mod4_next;
-					h_count_reg <= h_count_next;
-					v_count_reg <= v_count_next;
-					h_sync_reg  <= h_sync_next;
-					v_sync_reg  <= v_sync_next;
-				end
+				mod4_reg <= mod4_next;
+				h_count_reg <= h_count_next;
+				v_count_reg <= v_count_next;
+				h_sync_reg  <= h_sync_next;
+				v_sync_reg  <= v_sync_next;
 			end
 	
 	assign mod4_next = (mod4_reg + 1);

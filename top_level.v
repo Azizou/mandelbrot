@@ -25,7 +25,6 @@ module top_level(
     );
 	 wire reset;
 	 wire go;
-	 reg go_reg;
 	 
 	wire [15:0]startX;
 	wire [15:0]startY;
@@ -35,7 +34,7 @@ module top_level(
 	wire [15:0]yTest;
 	wire [15:0]c1Test;
 	wire [15:0]c2Test;
-	wire [7:0]divOut;
+	wire [6:0]divOut;
 	
 	//VGA and pixel gen
 	wire video_on, pixel_tick;
@@ -47,9 +46,10 @@ module top_level(
 	wire wea;
 
 	
-fractal frac (    .Clk_100M(Clk_100M),.reset(reset),.startX(startX),.startY(startY),
-.stepX(stepX), .stepY(stepY),.divOut(divOut), .xTest(xTest), .yTest(yTest), .c1Test(c1Test),
-.c2Test(c2Test), .addr_w(addr_w), .wea(wea),.display(go));
+	fractal frac(.Clk_100M(Clk_100M),.reset(reset),.startX(startX),.startY(startY),
+	.stepX(stepX), .stepY(stepY),.divOut(divOut), .xTest(xTest), .yTest(yTest), .c1Test(c1Test),
+	.c2Test(c2Test), .addr_w(addr_w), .wea(wea),.display(go));
+	
 	assign reset = 1'b0;
 	assign startX = 16'b1110000000000000;
 	assign startY = 16'b1110000000000000;
@@ -62,15 +62,14 @@ fractal frac (    .Clk_100M(Clk_100M),.reset(reset),.startX(startX),.startY(star
 	, .pixel_x(pixel_x), .pixel_y(pixel_y), .display(go));
 	
 	
-pixel_gen bitmap(.CLK_100MHz(Clk_100M), .reset(reset), 
+	pixel_gen bitmap(.CLK_100MHz(Clk_100M), .reset(reset), 
 	.video_on(video_on), .pixel_x(pixel_x), .pixel_y(pixel_y), .color(color_next), .addr_w(addr_w), .dina(divOut)
 	, .wea(wea));
 
 
 
-always @(posedge Clk_100M)
+	always @(posedge Clk_100M)
 		if(pixel_tick)
 			color <= color_next;
-			
 	assign COLOUR_OUT = color;
 endmodule

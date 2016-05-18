@@ -15,7 +15,7 @@ WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Lin
 WARNING:HDLCompiler:1016 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 65: Port read_enable is not connected to this instance
 WARNING:HDLCompiler:1016 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 72: Port sum is not connected to this instance
 WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/fractal.v" Line 73: Size mismatch in connection of port <stage>. Formal port size is 7-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 66: Size mismatch in connection of port <dina>. Formal port size is 7-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "/home/bluelabuser/Desktop/Temp/fractal/top_level.v" Line 50: Size mismatch in connection of port <divOut>. Formal port size is 8-bit while actual signal size is 7-bit.
 Completed static elaboration
 Fuse Memory Usage: 97280 KB
 Fuse CPU Usage: 920 ms
@@ -34,6 +34,6 @@ Time Resolution for simulation is 1ps.
 Waiting for 4 sub-compilation(s) to finish...
 Compiled 11 Verilog Units
 Built simulation executable /home/bluelabuser/Desktop/Temp/fractal/top_level_isim_beh.exe
-Fuse Memory Usage: 660772 KB
-Fuse CPU Usage: 980 ms
+Fuse Memory Usage: 660776 KB
+Fuse CPU Usage: 990 ms
 GCC CPU Usage: 1390 ms

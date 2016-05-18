@@ -31,7 +31,7 @@ module pixel_gen(
 	parameter width = 7;
 	parameter DATASIZE = 307200;
 
-
+	reg [18:0] pixel_counter = 19'b0;
 	wire  [18:0] addr_r;
 	wire [width - 1:0] dout;
 	
@@ -45,7 +45,7 @@ module pixel_gen(
 	
 	wire [11:0] bitmap_color;
 	assign addr_r = {10'b0,pixel_y}*640 + {9'b0,pixel_x};//{pixel_y[8:0], pixel_x[9:0]};//19 bit address
-	assign bitmap_color = {{dout[1],3'b110}, {2'b01, dout[1:0]},{dout[1:0],2'b11}};
+	assign bitmap_color = {5'b0,dout};//{{dout[1],3'b110}, {2'b01, dout[1:0]},{dout[1:0],2'b11}};
 
 	
 	//--------------------------------------------------
@@ -55,6 +55,9 @@ module pixel_gen(
 		if(~video_on | ~read_enable)
 			color = 12'h_0_0_0;
 		else
-			color = bitmap_color;
+			begin
+				color = bitmap_color;
+				pixel_counter <= pixel_counter + 1;
+			end
 			
 endmodule
