@@ -1,0 +1,31 @@
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.xst" -ofn "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Mandelbrot.ucf -p xc7a100t-csg324-3 Mandelbrot_top.ngc Mandelbrot_top.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mandelbrot_top_map.ncd Mandelbrot_top.ngd Mandelbrot_top.pcf 
+par -w -intstyle ise -ol high -mt off Mandelbrot_top_map.ncd Mandelbrot_top.ncd Mandelbrot_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mandelbrot_top.twx Mandelbrot_top.ncd -o Mandelbrot_top.twr Mandelbrot_top.pcf -ucf Mandelbrot.ucf 
+bitgen -intstyle ise -f Mandelbrot_top.ut Mandelbrot_top.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.xst" -ofn "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Mandelbrot.ucf -p xc7a100t-csg324-3 Mandelbrot_top.ngc Mandelbrot_top.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mandelbrot_top_map.ncd Mandelbrot_top.ngd Mandelbrot_top.pcf 
+par -w -intstyle ise -ol high -mt off Mandelbrot_top_map.ncd Mandelbrot_top.ncd Mandelbrot_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mandelbrot_top.twx Mandelbrot_top.ncd -o Mandelbrot_top.twr Mandelbrot_top.pcf -ucf Mandelbrot.ucf 
+bitgen -intstyle ise -f Mandelbrot_top.ut Mandelbrot_top.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.xst" -ofn "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.xst" -ofn "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Mandelbrot.ucf -p xc7a100t-csg324-3 Mandelbrot_top.ngc Mandelbrot_top.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mandelbrot_top_map.ncd Mandelbrot_top.ngd Mandelbrot_top.pcf 
+par -w -intstyle ise -ol high -mt off Mandelbrot_top_map.ncd Mandelbrot_top.ncd Mandelbrot_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mandelbrot_top.twx Mandelbrot_top.ncd -o Mandelbrot_top.twr Mandelbrot_top.pcf -ucf Mandelbrot.ucf 
+bitgen -intstyle ise -f Mandelbrot_top.ut Mandelbrot_top.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.xst" -ofn "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Mandelbrot.ucf -p xc7a100t-csg324-3 Mandelbrot_top.ngc Mandelbrot_top.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mandelbrot_top_map.ncd Mandelbrot_top.ngd Mandelbrot_top.pcf 
+par -w -intstyle ise -ol high -mt off Mandelbrot_top_map.ncd Mandelbrot_top.ncd Mandelbrot_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mandelbrot_top.twx Mandelbrot_top.ncd -o Mandelbrot_top.twr Mandelbrot_top.pcf -ucf Mandelbrot.ucf 
+bitgen -intstyle ise -f Mandelbrot_top.ut Mandelbrot_top.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.xst" -ofn "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Mandelbrot.ucf -p xc7a100t-csg324-3 Mandelbrot_top.ngc Mandelbrot_top.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mandelbrot_top_map.ncd Mandelbrot_top.ngd Mandelbrot_top.pcf 
+par -w -intstyle ise -ol high -mt off Mandelbrot_top_map.ncd Mandelbrot_top.ncd Mandelbrot_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mandelbrot_top.twx Mandelbrot_top.ncd -o Mandelbrot_top.twr Mandelbrot_top.pcf -ucf Mandelbrot.ucf 
+bitgen -intstyle ise -f Mandelbrot_top.ut Mandelbrot_top.ncd 

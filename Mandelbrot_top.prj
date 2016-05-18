@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/dp_bram.v"
+verilog work "vga_sync.v"
+verilog work "pixel_gen.v"
+verilog work "Mandelbrot_top.v"

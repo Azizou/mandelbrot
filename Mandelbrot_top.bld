@@ -1,0 +1,41 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Mandelbrot.ucf -p
+xc7a100t-csg324-3 Mandelbrot_top.ngc Mandelbrot_top.ngd
+
+Reading NGO file "/home/bluelabuser/Desktop/Temp/VGA/Mandelbrot_top.ngc" ...
+Loading design module "ipcore_dir/dp_bram.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Mandelbrot.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem - The Period constraint <NET "CLK_100MHz" PERIOD = 10 ns
+   HIGH 5ns;> [Mandelbrot.ucf(17)], is specified using the Net Period method
+   which is not recommended. Please use the Timespec PERIOD method.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 470660 kilobytes
+
+Writing NGD file "Mandelbrot_top.ngd" ...
+Total REAL time to NGDBUILD completion:  12 sec
+Total CPU time to NGDBUILD completion:   12 sec
+
+Writing NGDBUILD log file "Mandelbrot_top.bld"...
